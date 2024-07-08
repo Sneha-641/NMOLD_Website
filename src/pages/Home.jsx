@@ -6,7 +6,6 @@ const Home = () => {
   return (
     <>
       <div className=''>
-        <Navbar />
         <div className='h-[620px]'>
           <div className='w-full text-center justify-center m-auto flex mt-[8px]'>
             <div className='flex justify-center items-center h-[76px] w-[637px] px-[24px] bg-white home-search-main radius'>
