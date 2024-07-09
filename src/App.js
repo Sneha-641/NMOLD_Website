@@ -11,6 +11,7 @@ import { Footer } from './pages/Footer';
 import CopyrightBanner from './pages/CopyrightBanner';
 import PricingMain from './pages/PricingMain';
 import Navbar from './pages/Navbar';
+
 import Form from './pages/Form';
 import HeroSection from './pages/Herosection';
 import ServicesSection from './pages/ServicesSection';
@@ -20,8 +21,18 @@ import TestimonialsSection from './pages/TestimonialsSection';
 function App() {
   return (
     <>
-      <Navbar/>
-      <Main/>
+      <Navbar />
+      <AboutUs />
+      {/* <Home />
+
+      <WhyChooseUs />
+      <Delivers />
+      <ClientReview />
+      <Pricing />
+      <ContactUs />
+      <BannerBottom /> */}
+
+      {/* <PricingMain/> */}
       <Footer />
       <CopyrightBanner />
     </>
