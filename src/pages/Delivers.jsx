@@ -48,7 +48,7 @@ const Delivers = () => {
                                     <div className='flex flex-col w-[601px]'>
                                         <div className=' text-left text-[48px] font-semibold flex float-left justify-start items-start'>
                                             <p>
-                                            {item.heading}
+                                                {item.heading}
 
                                             </p>
                                         </div>
