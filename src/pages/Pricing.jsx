@@ -21,7 +21,7 @@ const Pricing = () => {
                         <li>✓ Advanced Statistics</li>
                     </ul>
                     <div className="price price-choose">$123 /month</div>
-                    <button className="choose-button">Choose</button>
+                    <button className="choose-button" >Choose</button>
                 </div>
 
                 <div className="pricing-plan">
@@ -34,7 +34,7 @@ const Pricing = () => {
                         <li className='pricing-no'>✗ Advanced Statistics</li>
                     </ul>
                     <div className="price price-choose">$123 /month</div>
-                    <button className="choose-button">Choose</button>
+                    <button className="choose-button" >Choose</button>
                 </div>
 
                 <div className="pricing-plan pricing-plan-active pro">
@@ -51,7 +51,7 @@ const Pricing = () => {
                     </ul>
                     <div className="price">$123 /month</div>
                     <div className='flex w-full items-center justify-center mt-5'>
-                        <button className="btn px-[16px] h-[61px] w-[231px] justify-center text-center">Try 1 month</button>
+                        <button className="btn px-[16px] h-[61px] w-[231px] justify-center text-center" >Try 1 month</button>
 
                     </div>
                 </div>
@@ -66,9 +66,10 @@ const Pricing = () => {
                         <li>✓ Advanced Statistics</li>
                     </ul>
                     <div className="price price-choose">$123 /month</div>
-                    <button className="choose-button">Choose</button>
+                    <button className="choose-button" >Choose</button>
                 </div>
             </div>
+            
         </div>
     );
 };

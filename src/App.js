@@ -11,7 +11,12 @@ import { Footer } from './pages/Footer';
 import CopyrightBanner from './pages/CopyrightBanner';
 import PricingMain from './pages/PricingMain';
 import Navbar from './pages/Navbar';
-import AboutUs from './pages/AboutUs';
+
+import Form from './pages/Form';
+import HeroSection from './pages/Herosection';
+import ServicesSection from './pages/ServicesSection';
+import TestimonialsSection from './pages/TestimonialsSection';
+
 // https://www.figma.com/design/OWcieRQi0UaZrbx5sQM9jJ/NMOLD?node-id=0-1&t=Fz6quNMjalRuuomr-0
 function App() {
   return (
@@ -31,6 +36,16 @@ function App() {
       <Footer />
       <CopyrightBanner />
     </>
+  );
+}
+
+function Main() {
+  return (
+    <main>
+      <HeroSection />
+      <ServicesSection/>
+      <TestimonialsSection />
+    </main>
   );
 }
 
