@@ -9,21 +9,23 @@ import ContactUs from './pages/ContactUs';
 import BannerBottom from './pages/BannerBottom';
 import { Footer } from './pages/Footer';
 import CopyrightBanner from './pages/CopyrightBanner';
-import Form from './pages/Form';
+import PricingMain from './pages/PricingMain';
+import Navbar from './pages/Navbar';
 // https://www.figma.com/design/OWcieRQi0UaZrbx5sQM9jJ/NMOLD?node-id=0-1&t=Fz6quNMjalRuuomr-0
 function App() {
   return (
     <>
-      {/* <Home />
+      <Home />
       <WhyChooseUs />
       <Delivers/>
       <ClientReview />
       <Pricing />
       <ContactUs />
       <BannerBottom />
+      */}
+      <PricingMain/>
       <Footer />
-      <CopyrightBanner /> */}
-      <Form/>      
+      <CopyrightBanner />
     </>
   );
 }
