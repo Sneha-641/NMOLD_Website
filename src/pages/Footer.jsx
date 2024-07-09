@@ -38,9 +38,9 @@ export const Footer = () => {
                     </div>
                 </div>
                 <div className=''>
-                    <div className='w-[308px] flex gap-[156px]'>
+                    <div className='w-[406px] flex gap-[156px]'>
                     <div className=''>
-                            <div className=''>
+                            <div className='w-[100px]'>
                                 <div className='text-[#060336] mb-3 text-[16px]' style={{fontWeight:"600", fontSize:"15px", lineHeight:"22.4px"}}>Explore</div>
                                 <div className='text-[#444444] mb-3 cursor-pointer text-[14px] hover:text-[var(--theme)]' style={{fontWeight:"400", fontSize:"14px", lineHeight:"22.4px"}}>Home</div>
                                 <div className='text-[#444444] mb-3 cursor-pointer text-[14px] hover:text-[var(--theme)]' style={{fontWeight:"400", fontSize:"14px", lineHeight:"22.4px"}}>About Us</div>
@@ -50,7 +50,7 @@ export const Footer = () => {
                             </div>
                         </div>
                         <div className=''>
-                            <div className=''>
+                            <div className='w-[150px]'>
                                 <div className='text-[#060336] mb-3 ' style={{fontWeight:"600", fontSize:"15px", lineHeight:"22.4px"}}>Help Center</div>
                                 <div className='text-[#444444] mb-3 cursor-pointer text-[14px] hover:text-[var(--theme)]' style={{fontWeight:"400", fontSize:"14px", lineHeight:"22.4px"}}>Community</div>
                                 <div className='text-[#444444] mb-3 cursor-pointer text-[14px] hover:text-[var(--theme)]' style={{fontWeight:"400", fontSize:"14px", lineHeight:"22.4px"}}>Knowledge</div>
