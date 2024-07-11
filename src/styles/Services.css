@@ -1,0 +1,36 @@
+/* Services.css */
+
+/* Hero Section */
+.image-section {
+    width: 400px;
+    height: 300px;
+  }
+  
+  .main-div {
+    align-items: center;
+  }
+  
+  /* Services Section */
+  .section-service {
+    background-color: #4F45EB;
+  }
+  
+  /* Testimonials Section */
+  .custom-shadow {
+    box-shadow: 0 4px 6px -4px rgba(181, 101, 118, 100);
+  }
+  
+  .custom-box1 {
+    width: 500px;
+    height: 560px;
+  }
+  
+  .custom-box2 {
+    width: 500px;
+    height: 320px;
+  }
+  
+  .text-box {
+    text-align: justify;
+  }
+  
