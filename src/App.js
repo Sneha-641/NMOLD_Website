@@ -22,7 +22,8 @@ function App() {
   return (
     <>
       <Navbar />
-      <AboutUs />
+      <ServicesSection />
+      {/* <AboutUs /> */}
       {/* <Home />
 
       <WhyChooseUs />
