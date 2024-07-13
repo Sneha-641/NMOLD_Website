@@ -2,6 +2,13 @@ import React from 'react'
 import Navbar from './Navbar'
 import '../styles/home.css'
 import IMGC from "../assets/Image_content.png"
+
+import WhyChooseUs from './WhyChooseUs';
+import Delivers from './Delivers';
+import ClientReview from './ClientReview';
+import Pricing from './Pricing';
+import ContactUs from './ContactUs';
+import { Link } from 'react-router-dom';
 const Home = () => {
   return (
     <>
@@ -25,7 +32,10 @@ const Home = () => {
               </div>
               <div className=''>
                 <div className='btn text-[20px] px-[16px] w-[186px] h-[56px] mt-[1rem]'>
+                <Link to="/contactus">
+
                   Contact Us
+                </Link>
                 </div>
               </div>
             </div>
@@ -36,6 +46,11 @@ const Home = () => {
           </div>
         </div>
       </div>
+      <WhyChooseUs />
+      <Delivers />
+      <ClientReview />
+      <Pricing />
+      <ContactUs />
     </>
   )
 }

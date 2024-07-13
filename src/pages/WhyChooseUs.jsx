@@ -1,10 +1,13 @@
 import React from 'react'
 import Icon1 from '../assets/Icon1.png'
+import Icon2 from '../assets/Icon2.png'
+import Icon3 from '../assets/Icon3.png'
+import Icon4 from '../assets/Icon.png'
 import "../styles/WhyChooseUs.css"
 const WhyChooseUs = () => {
     return (
         <>
-            <div className='h-[642px] w-full'>
+            <div className='h-[582px] w-full'>
                 <div className='heading'>
                     Why Choose Us?
                 </div>
@@ -108,13 +111,13 @@ const WhyChooseUs = () => {
                         <img src={Icon1} />
                         </td>
                         <td className=''>
-                        <img src={Icon1} />
+                        <img src={Icon2} />
                         </td>
                         <td className=''>
-                        <img src={Icon1} />
+                        <img src={Icon3} />
                         </td>
                         <td className=''>
-                        <img src={Icon1} />
+                        <img src={Icon4} />
                         </td>
                     </tr>
                     <tr>

@@ -1,5 +1,6 @@
 import React from 'react';
 import '../styles/Pricing.css'; // Import a CSS file for styling
+import { Link } from 'react-router-dom';
 
 const Pricing = () => {
     return (
@@ -21,7 +22,9 @@ const Pricing = () => {
                         <li>✓ Advanced Statistics</li>
                     </ul>
                     <div className="price price-choose">$123 /month</div>
-                    <button className="choose-button" >Choose</button>
+                    <button className="choose-button" ><Link to="/form">
+                        Choose
+                    </Link></button>
                 </div>
 
                 <div className="pricing-plan">
@@ -34,7 +37,9 @@ const Pricing = () => {
                         <li className='pricing-no'>✗ Advanced Statistics</li>
                     </ul>
                     <div className="price price-choose">$123 /month</div>
-                    <button className="choose-button" >Choose</button>
+                    <button className="choose-button" ><Link to="/form">
+                        Choose
+                    </Link></button>
                 </div>
 
                 <div className="pricing-plan pricing-plan-active pro">
@@ -51,7 +56,10 @@ const Pricing = () => {
                     </ul>
                     <div className="price">$123 /month</div>
                     <div className='flex w-full items-center justify-center mt-5'>
-                        <button className="btn px-[16px] h-[61px] w-[231px] justify-center text-center" >Try 1 month</button>
+                        <button className="btn px-[16px] h-[61px] w-[231px] justify-center text-center" ><Link to="/form">
+                            Try 1 month
+                        </Link>
+                        </button>
 
                     </div>
                 </div>
@@ -66,10 +74,14 @@ const Pricing = () => {
                         <li>✓ Advanced Statistics</li>
                     </ul>
                     <div className="price price-choose">$123 /month</div>
-                    <button className="choose-button" >Choose</button>
+                    <button className="choose-button" >
+                        <Link to="/form">
+                            Choose
+                        </Link>
+                    </button>
                 </div>
             </div>
-            
+
         </div>
     );
 };

@@ -11,30 +11,26 @@ import { Footer } from './pages/Footer';
 import CopyrightBanner from './pages/CopyrightBanner';
 import PricingMain from './pages/PricingMain';
 import Navbar from './pages/Navbar';
-
+// import ServicesSection 
 import Form from './pages/Form';
-// import MeetingForm from './pages/MeetingForm';
+import MeetingForm from './pages/MeetingForm';
 import Services from './pages/Services';
-
+import { Routes, BrowserRouter, Route } from 'react-router-dom';
+import AboutUs from './pages/AboutUs';
 // https://www.figma.com/design/OWcieRQi0UaZrbx5sQM9jJ/NMOLD?node-id=0-1&t=Fz6quNMjalRuuomr-0
 function App() {
   return (
     <>
       <Navbar />
-      <ServicesSection />
-      {/* <AboutUs /> */}
-      {/* <Home />
-
-      <WhyChooseUs />
-      <Delivers />
-      <ClientReview />
-      <Pricing />
-      <ContactUs />
-      <BannerBottom /> */}
-
-      {/* <PricingMain/> */}
-      <Navbar/>
-      <Services/>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/contactus" element={<ContactUs />} />
+        <Route path="/ourservices" element={<Services />}/>
+        <Route path="/pricing" element={<PricingMain />}/>
+        <Route path="/aboutus" element={<AboutUs/>}/>
+        <Route path="/form" element={<Form/>}/>
+      </Routes>
+      
       <Footer />
       <CopyrightBanner />
     </>

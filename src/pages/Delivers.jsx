@@ -1,7 +1,11 @@
 import React from 'react'
 import IMG from '../assets/Rectangle3846.png'
 import IMG2 from '../assets/Rectangle 3848.png'
+import { Link, useNavigate } from 'react-router-dom'
+
 const Delivers = () => {
+    const navigate = useNavigate()
+
     const data = [
         {
             heading: "Web Development Service",
@@ -64,7 +68,8 @@ const Delivers = () => {
                                         <div className='btn mt-14 h-[73px] w-[219px] text-[20px] px-[16px]'>
                                             <a href=""
                                             >
-                                                Learn Mode
+                                                <div className='' onClick={() => { navigate('/ourservices') }}
+                                                >Learn More</div>
                                             </a>
                                         </div>
                                     </div>

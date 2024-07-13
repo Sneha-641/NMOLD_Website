@@ -4,6 +4,9 @@ import IMG2 from '../assets/Image4.png'
 import IMG3 from '../assets/circle-check.png'
 import G1 from "../assets/Group01.png"
 import G2 from "../assets/IconBox.png"
+import G3 from "../assets/IconBox2.png"
+import G4 from "../assets/IconBox3.png"
+import G5 from "../assets/IconBox4.png"
 import "../styles/AboutUs.css"
 import ContactUs from './ContactUs'
 import HaveAQues from './HaveAQues'
@@ -236,9 +239,9 @@ const AboutUs = () => {
                                 </div>
                                 <div className='flex gap-5 justify-center mt-5 items-center'>
                                     <img src={G2} alt="" />
-                                    <img src={G2} alt="" />
-                                    <img src={G2} alt="" />
-                                    <img src={G2} alt="" />
+                                    <img src={G3} alt="" />
+                                    <img src={G4} alt="" />
+                                    <img src={G5} alt="" />
                                 </div>
                             </div>
                         </div>
