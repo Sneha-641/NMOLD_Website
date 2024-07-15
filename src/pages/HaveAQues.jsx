@@ -1,5 +1,6 @@
 import React from 'react'
 import PI from "../assets/PI12.png"
+import { Link } from 'react-router-dom'
 
 const HaveAQues = () => {
     return (
@@ -11,7 +12,7 @@ const HaveAQues = () => {
                         <img src={PI} alt="" className='h-[405px] w-[608px]' />
                     </div>
                     <div className='px-10 py-6'>
-                        <div className='pricingM-right-box p-4'>
+                        <div className='pricingM-right-box2 p-4'>
                             <div className='text-[var(--theme)] text-[25px] mt-2'>
                                 Have a question?
                             </div>
@@ -35,7 +36,9 @@ const HaveAQues = () => {
                                 We just do more than just connect with the clients, we relate to their business and try to provide them with the best possible cost-effective solution.
                             </div>
                             <div className='btn px-16 h-[57px] rounded-[8px] txet-[20px] w-[fit-content] mt-7'>
+                             <Link to="/meetingform">
                                 Schedule a Meeting
+                             </Link>
                             </div>
                         </div>
                     </div>

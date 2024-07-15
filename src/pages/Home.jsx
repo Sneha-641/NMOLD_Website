@@ -18,10 +18,10 @@ const Home = () => {
             <div className='flex justify-center items-center h-[76px] w-[637px] px-[24px] bg-white home-search-main radius'>
               <input
                 className='w-[80%]'
-                placeholder='Enter Your Email'
+                placeholder='Enter Your Message'
               />
               <div className='btn float-right w-[140px] h-[46px] flex items-center text-center justify-center textsize'>
-                Search
+                Send
               </div>
             </div>
           </div>
@@ -31,7 +31,7 @@ const Home = () => {
               Custom Product & Software Development Focused On Your Sucess
               </div>
               <div className=''>
-                <div className='btn text-[20px] px-[16px] w-[186px] h-[56px] mt-[1rem]'>
+                <div className='btn text-[20px] px-[16px] w-[186px] h-[56px] mt-[3rem]'>
                 <Link to="/contactus">
 
                   Contact Us

@@ -10,25 +10,25 @@ const Delivers = () => {
         {
             heading: "Web Development Service",
             img: IMG,
-            desc: "Transform your ideas into reality with our expert app development services. We specialize in creating intuitive, high-performance mobile apps tailored to your business needs. Elevate your digital presence with custom solutions designed to engage and inspire.",
+            desc:'We offer top-notch web development services tailored to your business needs. Our expertise includes custom web development, responsive design, and e-commerce solutions to enhance your online presence.Let us help you create a stunning and functional website that stands out.',
             link: "#"
         },
         {
             heading: "App Development Service",
             img: IMG2,
-            desc: "We offer top-notch web development services tailored to your business needs. Our expertise includes custom web development, responsive design, and e-commerce solutions to enhance your online presence.Let us help you create a stunning and functional website that stands out.",
+            desc:'Transform your ideas into reality with our expert app development services. We specialize in creating intuitive, high-performance mobile apps tailored to your business needs. Elevate your digital presence with custom solutions designed to engage and inspire.',
             link: "#"
         },
         {
             heading: "Ui/Ux Development Service",
             img: IMG,
-            desc: "We offer top-notch web development services tailored to your business needs. Our expertise includes custom web development, responsive design, and e-commerce solutions to enhance your online presence.Let us help you create a stunning and functional website that stands out.",
+            desc:'We offer top-notch web development services tailored to your business needs. Our expertise includes custom web development, responsive design, and e-commerce solutions to enhance your online presence.Let us help you create a stunning and functional website that stands out.',
             link: "#"
         },
         {
             heading: "Digital Marketing Service",
             img: IMG2,
-            desc: "Transform your ideas into reality with our expert app development services. We specialize in creating intuitive, high-performance mobile apps tailored to your business needs. Elevate your digital presence with custom solutions designed to engage and inspire.",
+            desc:'Transform your ideas into reality with our expert app development services. We specialize in creating intuitive, high-performance mobile apps tailored to your business needs. Elevate your digital presence with custom solutions designed to engage and inspire.',
             link: "#"
         },
 
@@ -50,16 +50,15 @@ const Delivers = () => {
                                         <img src={item.img} className='h-[475px] w-[492px]' />
                                     </div>
                                     <div className='flex flex-col w-[601px]'>
-                                        <div className=' text-left text-[48px] font-semibold flex float-left justify-start items-start'>
+                                        <div className=' text-left text-[44px] font-semibold flex float-left justify-start items-start'>
                                             <p>
                                                 {item.heading}
-
                                             </p>
                                         </div>
                                         <div className=' text-justify pt-6 ' style={{
                                             fontSize: "30px",
                                             fontWeight: "400",
-                                            lineHeight: "37.2px",
+                                            lineHeight: "31.2px",
                                             textAlign: "justified",
                                             color: "#6A6A6A",
                                         }}>

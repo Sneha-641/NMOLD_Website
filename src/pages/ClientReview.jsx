@@ -27,7 +27,7 @@ const ClientReview = () => {
         setTimeout(func, 2800);
     }, [sec])
     return (
-        <div className='w-full mb-[10rem]'>
+        <div className='w-full mb-[1rem]'>
             <div className='flex justify-center'>
                 <div className='' style={{
                     fontSize: "36px",
@@ -51,7 +51,7 @@ const ClientReview = () => {
                 </div>
 
             </div>
-            <div className='flex w-full gap-[2rem] justify-center items-center'>
+            {/* <div className='flex w-full gap-[2rem] justify-center items-center'>
                 {imgs.map((item, index) => {
                     return (
                         <div className='flex justify-center items-center'>
@@ -61,7 +61,7 @@ const ClientReview = () => {
                 }
                 )
                 }
-            </div>
+            </div> */}
         </div>
     )
 }

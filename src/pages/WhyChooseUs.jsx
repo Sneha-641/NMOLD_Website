@@ -123,49 +123,49 @@ const WhyChooseUs = () => {
                     <tr>
                     <td className=''>
                             <div className='' style={{
-                                fontFamily: " Space Grotesk",
-                                fontSize: "30px",
+                                fontFamily: "Plus Jakarta Sans, sans-serif",
+                                fontSize: "27px",
                                 fontWeight: "700",
                                 lineHeight: "42px",
                                 textAlign: "left",
                             }}>
-                                Robust Strategies
+                                 SDE Tradition
 
                             </div>
                         </td>
                         <td className=''>
                             <div className='' style={{
-                                fontFamily: " Space Grotesk",
+                                fontFamily: "Plus Jakarta Sans, sans-serif",
                                 fontSize: "30px",
                                 fontWeight: "700",
                                 lineHeight: "42px",
                                 textAlign: "left",
                             }}>
-                                Robust Strategies
+                                Dashboard
 
                             </div>
                         </td>
                         <td className=''>
                             <div className='' style={{
-                                fontFamily: " Space Grotesk",
+                                fontFamily: "Plus Jakarta Sans, sans-serif",
                                 fontSize: "30px",
                                 fontWeight: "700",
                                 lineHeight: "42px",
                                 textAlign: "left",
                             }}>
-                                Robust Strategies
+                                Innovation
 
                             </div>
                         </td>
                         <td className=''>
                             <div className='' style={{
-                                fontFamily: " Space Grotesk",
+                                fontFamily: "Plus Jakarta Sans, sans-serif",
                                 fontSize: "30px",
                                 fontWeight: "700",
                                 lineHeight: "42px",
                                 textAlign: "left",
                             }}>
-                                Robust Strategies
+                                Data Driven
 
                             </div>
                         </td>
@@ -192,7 +192,7 @@ const WhyChooseUs = () => {
                                 color: "#6A6A6A"
 
                             }}>
-                                Simplified campaign management with one view and regular updates. Pause, start or uplift with a single click. Manage your growth and results on the go.
+                                We have designed a set of robust strategies that are delivered for all our performance campaigns. We also keep up-to-date with new technologies, to always be a step ahead.
                             </div>
                             </td>
                             <td className=''>
@@ -204,7 +204,7 @@ const WhyChooseUs = () => {
                                 color: "#6A6A6A"
 
                             }}>
-                                Simplified campaign management with one view and regular updates. Pause, start or uplift with a single click. Manage your growth and results on the go.
+                                We have revolutionized traditional marketing strategies. We offer result-oriented marketing campaigns so you achieve your goals faster. 
                             </div>
                             </td>
                             <td className=''>
@@ -216,7 +216,7 @@ const WhyChooseUs = () => {
                                 color: "#6A6A6A"
 
                             }}>
-                                Simplified campaign management with one view and regular updates. Pause, start or uplift with a single click. Manage your growth and results on the go.
+                            We collate and analyze your data, for meaningful insights to develop tailored user acquisition strategies. Deep dive into your data and unlock hyper-growth.
                             </div>
                             </td>
                     </tr>
