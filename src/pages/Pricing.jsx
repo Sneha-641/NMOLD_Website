@@ -20,7 +20,6 @@ const Pricing = () => {
                         </li><li>✓ Branding and Visual Design</li>
                     </ul>
                     <div className='price-choose-main '>
-
                         <div className="price price-choose">$123 /month</div>
                         <button className="choose-button" ><Link to="/form">
                             <div className="">

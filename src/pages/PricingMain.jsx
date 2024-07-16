@@ -122,9 +122,9 @@ const PricingMain = () => {
                 </div>
                 <div className='flex mt-[2rem] items-center justify-center'>
                     <Link to="/contactus">
-                    <div className='h-[84px] w-[865px] pricingM-sub bg-white hover:bg-[var(--theme)] hover:text-white hover:cursor-pointer text-[#060336] text-center justify-center items-center flex'>
-                        Need a Customized Plan? Please Contact Us
-                    </div>
+                        <div className='h-[84px] w-[865px] pricingM-sub bg-white hover:bg-[var(--theme)] hover:text-white hover:cursor-pointer text-[#060336] text-center justify-center items-center flex'>
+                            Need a Customized Plan? Please Contact Us
+                        </div>
                     </Link>
                 </div>
                 <div className='mt-[4rem]'>
@@ -135,11 +135,11 @@ const PricingMain = () => {
                                     We took the best parts of an agency and freelance marketplace
                                 </div>
                             </div>
-                            
+
                         </div>
 
                         <div className='flex w-full justify-between items-center text-center text-[20px] font-bold mb-4 mt-4'>
-                        <div className='w-[28%] '>
+                            <div className='w-[28%] '>
                                 &nbsp;
                             </div>
                             <div className=' w-[23%]'>
@@ -200,9 +200,9 @@ const PricingMain = () => {
                                                 </div>
                                             </div>
                                             <div className='w-[325px] h-[755px] mb-10'>
-                                            
+
                                                 <div className=''>
-                                                
+
                                                     <div className='flex flex-col gap-[2.2rem]  w-[322px]'>
                                                         {data3.map((item, index) => (
                                                             <>
@@ -281,13 +281,12 @@ const PricingMain = () => {
                                                 </div>
                                                 <div className='flex gap-10'>
                                                     <div className='btn mt-10 h-[57px] w-[228px] text-[20px] px-[16px]'>
-                                                        <a href="https://wa.me/8744073223" 
-        target="_blank"
-        rel="noopener noreferrer">
+                                                        <a href="https://wa.me/8744073223"
+                                                            target="_blank"
+                                                            rel="noopener noreferrer">
                                                             Chat With Us
                                                         </a>
                                                     </div>
-
                                                     <div className='radius pricingM-btn2 mt-10 h-[57px] w-[228px] text-[20px] px-[16px]'>
                                                         <Link to="/contactus">
                                                             Send Enquiry

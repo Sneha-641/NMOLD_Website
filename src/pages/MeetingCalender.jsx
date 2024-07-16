@@ -83,7 +83,6 @@ const MeetingCalender = () => {
                 </div>
             </div>
             <div className={``}>
-
                 <div className="flex items-center justify-center min-h-screen mt-4 form-schedule-main-box">
                     <div className="bg- p-10 rounded-lg shadow-md w-full max-w-4xl border border-blue-900">
                         <h1 className="text-2xl font-bold mb-4 text-left">Your Information</h1>

@@ -14,6 +14,7 @@ const Navbar = () => {
                     </Link></div>
                     <div className='text-[16px] cursor-pointer'><Link to="/aboutus">
                     About
+                    
                     </Link></div>
                     <div className='text-[16px] cursor-pointer'><Link to="/ourservices">
                     Services

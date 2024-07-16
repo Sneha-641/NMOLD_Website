@@ -5,7 +5,6 @@ import { Link } from 'react-router-dom'
 const HaveAQues = () => {
     return (
         <>
-
             <div className='flex justify-center items-center mb-[10rem]'>
                 <div className='h-[405px] flex '>
                     <div className='h-[405px] w-[608px]'>
