@@ -12,26 +12,26 @@ const Pricing = () => {
             </div>
 
             <div className="pricing-plans mt-10 ">
-                <div className="pricing-plan relative ">
-                    <h3 className='pln-pricing'>Web Design</h3>
+                <div className="pricing-plan relative pricing-plan-active">
+                    <h3 className='pln-pricing justify-center text-center items-center flex'>Web Design</h3>
                     <ul>
                         <li>✓ UI/UX Design
                         </li><li>✓ Responsive Design
                         </li><li>✓ Branding and Visual Design</li>
                     </ul>
-                    <div className='price-choose-main'>
+                    <div className='price-choose-main '>
 
-                    <div className="price price-choose">$123 /month</div>
-                    <button className="choose-button" ><Link to="/form">
-                        <div className="">
-                        Choose
+                        <div className="price price-choose">$123 /month</div>
+                        <button className="choose-button" ><Link to="/form">
+                            <div className="">
+                                Choose
 
-                        </div>
-                    </Link></button>
+                            </div>
+                        </Link></button>
                     </div>
                 </div>
 
-                <div className="pricing-plan relative">
+                <div className="pricing-plan relative pricing-plan-active">
                     <h3 className='pln-pricing'>Web Development</h3>
                     <ul>
                         <li>✓ Front-end Development (HTML, CSS, JavaScript, frameworks like React, Angular, Vue)
@@ -40,42 +40,46 @@ const Pricing = () => {
                             PHP, Java)
                         </li><li>✓ Full-Stack Development</li>
                     </ul>
-                    
+
                     <div className='price-choose-main'>
 
-                    <div className="price price-choose">$123 /month</div>
-                    <button className="choose-button" ><Link to="/form">
-                        <div className="">
-                        Choose
+                        <div className="price price-choose">$123 /month</div>
+                        <button className="choose-button" ><Link to="/form">
+                            <div className="">
+                                Choose
 
-                        </div>
-                    </Link></button>
+                            </div>
+                        </Link></button>
                     </div>
                 </div>
 
-                <div className="pricing-plan pricing-plan-active pro">
+                <div className="pricing-plan pricing-plan-active pro relative">
                     <div className=' flex justify-between items-center w-full'>
                         <h3 className=' font-semibold text-[24px]'>Mobile App Development</h3>
-                        <div className="save-badge ">Save $40</div>
+                        {/* <div className="save-badge ">Save $40</div> */}
                     </div>
-                    <ul className='pricing-list'>
+                    <ul className='pricing-list '>
                         <li>✓ Progressive Web Apps (PWAs)
                         </li><li>✓ Native App Development (iOS,
                             Android)
                         </li><li>✓ Cross-Platform App
                             Development</li>
                     </ul>
-                    <div className="price">$123 /month</div>
-                    <div className='flex w-full items-center justify-center mt-5'>
-                        <button className="btn px-[16px] h-[61px] w-[231px] justify-center text-center" ><Link to="/form">
-                            Try 1 month
-                        </Link>
-                        </button>
+                    <div className='w-full items-center  justify-center mt-5'>
+                        <div className='price-choose-main'>
 
+                            <div className="price price-choose">$123 /month</div>
+                            <button className="choose-button w-full flex items-center  justify-center" ><Link to="/form">
+                                <div className="flex justify-center items-center">
+                                    Choose
+
+                                </div>
+                            </Link></button>
+                        </div>
                     </div>
                 </div>
 
-                <div className="pricing-plan relative">
+                <div className="pricing-plan relative pricing-plan-active pro">
                     <h3 className='pln-pricing'>Digital Marketing</h3>
                     <ul>
                         <li>✓ Social Media Marketing
@@ -83,13 +87,12 @@ const Pricing = () => {
                         </li><li>✓ Pay-Per-Click (PPC) Advertising</li>
                     </ul>
                     <div className='price-choose-main'>
-                    <div className="price price-choose">$123 /month</div>
-                    <button className="choose-button" ><Link to="/form">
-                        <div className="">
-                        Choose
-
-                        </div>
-                    </Link></button>
+                        <div className="price price-choose">$123 /month</div>
+                        <button className="choose-button w-full flex items-center  justify-center" ><Link to="/form">
+                            <div className="flex justify-center items-center">
+                                Choose
+                            </div>
+                        </Link></button>
                     </div>
                 </div>
             </div>

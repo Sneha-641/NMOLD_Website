@@ -19,6 +19,7 @@ import { Routes, BrowserRouter, Route } from 'react-router-dom';
 import AboutUs from './pages/AboutUs';
 import TermsOfUse from './pages/TermsOfUse';
 import PrivacyPolicy from './pages/PrivacyPolicy';
+import MeetingCalender from './pages/MeetingCalender';
 // https://www.figma.com/design/OWcieRQi0UaZrbx5sQM9jJ/NMOLD?node-id=0-1&t=Fz6quNMjalRuuomr-0
 function App() {
   return (

@@ -7,6 +7,7 @@ import Image1 from '../assets/Image1.png';
 import Image2 from '../assets/Image2.png';
 import '../styles/Services.css';
 import { Link } from 'react-router-dom';
+import ClientReview from "./ClientReview";
 const Services = () => {
   const [selectedService, setSelectedService] = useState('web');
 
@@ -323,9 +324,12 @@ const Services = () => {
           </div>
         </div>
       </section>
-
+<br/>
+<br/>
+<br/>
       {/* Testimonials Section */}
-      <section className="mt-6 py-6">
+            <ClientReview />
+      {/* <section className="mt-6 py-6">
         <div className="container mx-auto flex justify-center items-center">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-[4rem] ">
             {testimonials.map((testimonial, index) => (
@@ -353,7 +357,7 @@ const Services = () => {
             ))}
           </div>
         </div>
-      </section>
+      </section> */}
     </div>
   );
 };

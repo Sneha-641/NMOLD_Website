@@ -138,7 +138,7 @@ const PricingMain = () => {
                             
                         </div>
 
-                        <div className='flex w-full justify-between items-start text-[20px] font-bold mb-4 mt-4'>
+                        <div className='flex w-full justify-between items-center text-center text-[20px] font-bold mb-4 mt-4'>
                         <div className='w-[28%] '>
                                 &nbsp;
                             </div>
@@ -281,9 +281,11 @@ const PricingMain = () => {
                                                 </div>
                                                 <div className='flex gap-10'>
                                                     <div className='btn mt-10 h-[57px] w-[228px] text-[20px] px-[16px]'>
-                                                        <Link to="/form">
+                                                        <a href="https://wa.me/8744073223" 
+        target="_blank"
+        rel="noopener noreferrer">
                                                             Chat With Us
-                                                        </Link>
+                                                        </a>
                                                     </div>
 
                                                     <div className='radius pricingM-btn2 mt-10 h-[57px] w-[228px] text-[20px] px-[16px]'>
