@@ -2,21 +2,26 @@ import React from 'react'
 import IMG1 from '../assets/Image3.png'
 import IMG2 from '../assets/Image4.png'
 import IMG3 from '../assets/circle-check.png'
+import IMG4 from '../assets/flag.png'
+import IMG5 from '../assets/bulb_fill.png'
+import IMG6 from '../assets/people-multiple.png'
 import G1 from "../assets/Group01.png"
 import G2 from "../assets/IconBox.png"
 import G3 from "../assets/IconBox2.png"
 import G4 from "../assets/IconBox3.png"
 import G5 from "../assets/IconBox4.png"
 import "../styles/AboutUs.css"
+import AnimatedNumbers from "react-animated-numbers";
 import ContactUs from './ContactUs'
 import HaveAQues from './HaveAQues'
+import { Link } from 'react-router-dom'
 const AboutUs = () => {
     return (
         <>
             <div className=''>
                 <div className='h-[524px] pt-[5rem]'>
                     <div className='h-[431px] flex justify-around items-center'>
-                        <div className='h-[317px] w-[468px]'>
+                        <div className='h-[431px] w-[468px]'>
                             <div className='About-sub-h'>
                                 The Story of NMOLD
                             </div>
@@ -25,10 +30,17 @@ const AboutUs = () => {
                             </div>
                             <div className='flex gap-10 mt-[3rem]'>
                                 <div className='btn radius px-[16px] rounded-[8px] h-[43px] w-[fit-content] flex'>
+                                   <Link to="/ourservices">
                                     Explore our Services
+
+                                   </Link>
                                 </div>
                                 <div className='text-[var(--theme)] border-[var(--theme)] border-[1px] radius px-[16px] rounded-[8px] h-[43px] w-[fit-content] flex justify-center items-center'>
-                                    Contact Us
+                                 <Link to="/contactus"
+                                 >
+
+                                  Contact Us
+                                 </Link>  
                                 </div>
                             </div>
                         </div>
@@ -48,32 +60,88 @@ const AboutUs = () => {
                     <div className=''>
                         <div className='flex justify-center items-center gap-6 mt-10'>
                             <div className='About-box-54 flex flex-col justify-center items-center'>
-                                <div className='About-sub55'>
-                                    200 <span className='text-[var(--theme)]'>$ms</span>
+                                <div className='About-sub55 flex'>
+                                    <AnimatedNumbers
+                                        includeComma
+                                        // className={styles.container}
+                                        transitions={(index) => ({
+                                            type: "spring",
+                                            duration: index + 5.3,
+                                        })}
+                                        animateToNumber={200}
+                                        fontStyle={{
+                                            fontSize: 50,
+                                            color: "rgb(0, 0, 0)",
+                                            fontWeight: 500,
+                                            textAlign: "center",
+                                        }}
+                                    /><span className='text-[var(--theme)]'>$ms</span>
                                 </div>
                                 <div className='About-sub-56'>
                                     Worth GMV delivered
                                 </div>
                             </div>
                             <div className='About-box-54 flex flex-col justify-center items-center'>
-                                <div className='About-sub55'>
-                                    2 <span className='text-[var(--theme)]'>years</span>
+                                <div className='About-sub55 flex'>
+                                <AnimatedNumbers
+                                        includeComma
+                                        // className={styles.container}
+                                        transitions={(index) => ({
+                                            type: "spring",
+                                            duration: index + 5.3,
+                                        })}
+                                        animateToNumber={2}
+                                        fontStyle={{
+                                            fontSize: 50,
+                                            color: "rgb(0, 0, 0)",
+                                            fontWeight: 500,
+                                            textAlign: "center",
+                                        }}
+                                    /> <span className='text-[var(--theme)]'>years</span>
                                 </div>
                                 <div className='About-sub-56'>
                                     Founded sice 2022
                                 </div>
                             </div>
                             <div className='About-box-54 flex flex-col justify-center items-center'>
-                                <div className='About-sub55'>
-                                    50 <span className='text-[var(--theme)]'>+</span>
+                                <div className='About-sub55 flex'>
+                                <AnimatedNumbers
+                                        includeComma
+                                        // className={styles.container}
+                                        transitions={(index) => ({
+                                            type: "spring",
+                                            duration: index + 5.3,
+                                        })}
+                                        animateToNumber={50}
+                                        fontStyle={{
+                                            fontSize: 50,
+                                            color: "rgb(0, 0, 0)",
+                                            fontWeight: 500,
+                                            textAlign: "center",
+                                        }}
+                                    /> <span className='text-[var(--theme)]'>+</span>
                                 </div>
                                 <div className='About-sub-56'>
                                     Clients
                                 </div>
                             </div>
                             <div className='About-box-54 flex flex-col justify-center items-center'>
-                                <div className='About-sub55'>
-                                    300 <span className='text-[var(--theme)]'>+</span>
+                                <div className='About-sub55 flex'>
+                                <AnimatedNumbers
+                                        includeComma
+                                        // className={styles.container}
+                                        transitions={(index) => ({
+                                            type: "spring",
+                                            duration: index + 5.3,
+                                        })}
+                                        animateToNumber={300}
+                                        fontStyle={{
+                                            fontSize: 50,
+                                            color: "rgb(0, 0, 0)",
+                                            fontWeight: 500,
+                                            textAlign: "center",
+                                        }}
+                                    /> <span className='text-[var(--theme)]'>+</span>
                                 </div>
                                 <div className='About-sub-56'>
                                     Projects Delivered
@@ -81,13 +149,13 @@ const AboutUs = () => {
                             </div>
                         </div>
                     </div>
-                    <div className='h-[524px] pt-[5rem] mt-[6rem]'>
+                    <div className='h-[524px] pt-[1rem] mt-[6rem]'>
                         <div className='h-[431px] flex justify-center gap-[4.5rem] items-center'>
 
                             <div className='h-[431px] w-[674px]'>
                                 <img src={IMG2} alt="" />
                             </div>
-                            <div className='h-[317px] w-[468px]'>
+                            <div className='h-[411px] w-[468px]'>
 
                                 <div className='About-sub-h'>
                                     How Company Started
@@ -100,7 +168,7 @@ const AboutUs = () => {
 
                     </div>
                 </div>
-                <div className='mt-[10rem]'>
+                <div className='mt-[4rem]'>
                     <div className='heading'>
                         OUR VALUES
                     </div>
@@ -134,7 +202,7 @@ const AboutUs = () => {
                             <div className='flex justify-start items-start w-[80%] mb-3'>
 
                                 <div className='h-[50px] w-[50px] text-left float-left'>
-                                    <img src={IMG3} alt="" className='float-left text-left' />
+                                    <img src={IMG4} alt="" className='float-left text-left' />
                                 </div>
                             </div>
                             <div className='flex flex-col justify-center items-center mb-3'>
@@ -156,7 +224,7 @@ const AboutUs = () => {
                             <div className='flex justify-start items-start w-[80%] mb-3'>
 
                                 <div className='h-[50px] w-[50px] text-left float-left'>
-                                    <img src={IMG3} alt="" className='float-left text-left' />
+                                    <img src={IMG5} alt="" className='float-left text-left' />
                                 </div>
                             </div>
                             <div className='flex flex-col justify-center items-center mb-3'>
@@ -178,7 +246,7 @@ const AboutUs = () => {
                             <div className='flex justify-start items-start w-[80%] mb-3'>
 
                                 <div className='h-[50px] w-[50px] text-left float-left'>
-                                    <img src={IMG3} alt="" className='float-left text-left' />
+                                    <img src={IMG6} alt="" className='float-left text-left' />
                                 </div>
                             </div>
                             <div className='flex flex-col justify-center items-center mb-3'>
@@ -198,7 +266,7 @@ const AboutUs = () => {
                         </div>
                     </div>
                 </div>
-                <div className='mt-[10rem]'>
+                <div className='mt-[6rem]'>
                     <div className='heading'>
                         The Founding Member NMOLD
                     </div>
@@ -247,7 +315,7 @@ const AboutUs = () => {
                         </div>
                     </div>
                 </div>
-                <div className='mt-[10rem]'>
+                <div className='mt-[6rem]'>
                     <HaveAQues />
                 </div>
             </div>

@@ -8,6 +8,7 @@ import PI from "../assets/PI12.png"
 import ClientReview from './ClientReview'
 import { Footer } from './Footer'
 import HaveAQues from './HaveAQues'
+import { Link } from 'react-router-dom'
 const PricingMain = () => {
     const datad = [
         {
@@ -23,9 +24,6 @@ const PricingMain = () => {
             ok: 1
         }, {
             name: "$$",
-            ok: 1
-        }, {
-            name: "Scale up and down at your own pace",
             ok: 1
         }, {
             name: "Scale up and down at your own pace",
@@ -66,9 +64,6 @@ const PricingMain = () => {
         }, {
             name: "Scale up and down at your own pace",
             ok: 1
-        }, {
-            name: "Scale up and down at your own pace",
-            ok: 1
         },
     ]
     const data3 = [
@@ -81,9 +76,6 @@ const PricingMain = () => {
         }, {
             name: "Scale up and down at your own pace",
             ok: 1
-        }, {
-            name: "Scale up and down at your own pace",
-            ok: 0
         }, {
             name: "Scale up and down at your own pace",
             ok: 0
@@ -120,9 +112,6 @@ const PricingMain = () => {
         }, {
             name: "Scale up and down at your own pace",
             ok: 0
-        }, {
-            name: "Scale up and down at your own pace",
-            ok: 0
         },
     ]
     return (
@@ -131,25 +120,43 @@ const PricingMain = () => {
                 <div className=''>
                     <Pricing />
                 </div>
-                <div className='flex mt-[4rem] items-center justify-center'>
-                    <div className='h-[84px] w-[865px] pricingM-sub bg-white text-[#060336] text-center justify-center items-center flex'>
-                        Need a Customized Plan? Please Contact Us
-                    </div>
+                <div className='flex mt-[2rem] items-center justify-center'>
+                    <Link to="/contactus">
+                        <div className='h-[84px] w-[865px] pricingM-sub bg-white hover:bg-[var(--theme)] hover:text-white hover:cursor-pointer text-[#060336] text-center justify-center items-center flex'>
+                            Need a Customized Plan? Please Contact Us
+                        </div>
+                    </Link>
                 </div>
-                <div className='mt-[10rem]'>
-                    <div className='h-[1055px] overflow-hidden'>
+                <div className='mt-[4rem]'>
+                    <div className='h-[795px] overflow-hidden'>
                         <div className='w-full flex justify-center items-center'>
                             <div className='w-[718px] flex justify-center items-center'>
                                 <div className='pricingM-sub2 text-center'>
                                     We took the best parts of an agency and freelance marketplace
                                 </div>
                             </div>
+
+                        </div>
+
+                        <div className='flex w-full justify-between items-center text-center text-[20px] font-bold mb-4 mt-4'>
+                            <div className='w-[28%] '>
+                                &nbsp;
+                            </div>
+                            <div className=' w-[23%]'>
+                                Aloa
+                            </div>
+                            <div className=' w-[23%]'>
+                                Marketplace
+                            </div>
+                            <div className=' w-[26%]'>
+                                Agency
+                            </div>
                         </div>
                         <div className=''>
-                            <div className='pricingM-cards-main gap-[1%] justify-around'>
-                                <div className='w-[325px] h-[755px] pt-10'>
+                            <div className='pricingM-cards-main gap-[1%]  justify-around px-[3rem]'>
+                                <div className='w-[325px]   pt-10'>
                                     <div className=''>
-                                        <div className='flex flex-col gap-[52px]  w-[322px]'>
+                                        <div className='flex flex-col gap-[2.2rem]  w-[322px]'>
                                             {data.map((item, index) => (
                                                 <>
                                                     <div className='flex justify-left items-center pl-3 gap-4'>
@@ -169,11 +176,11 @@ const PricingMain = () => {
                                     </div>
                                 </div>
                                 <div className=''>
-                                    <div className='bg-white pricingM-card-right pt-10'>
+                                    <div className='bg-white pricingM-card-right h-[600px] pt-10'>
                                         <div className='flex justify-evenly gap-[15px]'>
                                             <div className='w-[325px] h-[755px]'>
                                                 <div className=''>
-                                                    <div className='flex flex-col gap-[52px]  w-[322px]'>
+                                                    <div className='flex flex-col gap-[2.2rem]  w-[322px]'>
                                                         {data.map((item, index) => (
                                                             <>
                                                                 <div className='flex justify-left items-center pl-3 gap-4'>
@@ -193,8 +200,10 @@ const PricingMain = () => {
                                                 </div>
                                             </div>
                                             <div className='w-[325px] h-[755px] mb-10'>
+
                                                 <div className=''>
-                                                    <div className='flex flex-col gap-[52px]  w-[322px]'>
+
+                                                    <div className='flex flex-col gap-[2.2rem]  w-[322px]'>
                                                         {data3.map((item, index) => (
                                                             <>
                                                                 <div className='flex justify-left items-center pl-3 gap-4'>
@@ -215,7 +224,7 @@ const PricingMain = () => {
                                             </div>
                                             <div className='w-[325px] h-[755px]'>
                                                 <div className=''>
-                                                    <div className='flex flex-col gap-[52px]  w-[322px]'>
+                                                    <div className='flex flex-col gap-[2.2rem]  w-[322px]'>
                                                         {data4.map((item, index) => (
                                                             <>
                                                                 <div className='flex justify-left items-center gap-4'>
@@ -241,7 +250,7 @@ const PricingMain = () => {
                         </div>
                     </div>
                 </div>
-                <div className='mt-[10rem]'>
+                <div className='mt-[4rem]'>
                     <div className=''>
                         <div className='flex justify-center'>
                             <div className='w-[80%]'>
@@ -255,13 +264,13 @@ const PricingMain = () => {
                                                 <div className='text-[25px] text-[var(--theme)]'>
                                                     Own an App? Grow like Crazy with us.
                                                 </div>
-                                                <div className=' text-left text-[40px] font-semibold flex float-left justify-start items-start'>
+                                                <div className=' text-left text-[35px] font-semibold flex float-left justify-start items-start'>
                                                     <p>
                                                         {item.heading}
 
                                                     </p>
                                                 </div>
-                                                <div className=' text-justify pt-6 ' style={{
+                                                <div className=' text-justify pt-3 ' style={{
                                                     fontSize: "20px",
                                                     fontWeight: "400",
                                                     lineHeight: "37.2px",
@@ -271,18 +280,17 @@ const PricingMain = () => {
                                                     {item.desc}
                                                 </div>
                                                 <div className='flex gap-10'>
-                                                    <div className='btn mt-14 h-[57px] w-[228px] text-[20px] px-[16px]'>
-                                                        <a href=""
-                                                        >
-                                                            Char With Us
+                                                    <div className='btn mt-10 h-[57px] w-[228px] text-[20px] px-[16px]'>
+                                                        <a href="https://wa.me/8744073223"
+                                                            target="_blank"
+                                                            rel="noopener noreferrer">
+                                                            Chat With Us
                                                         </a>
                                                     </div>
-
-                                                    <div className='radius pricingM-btn2 mt-14 h-[57px] w-[228px] text-[20px] px-[16px]'>
-                                                        <a href=""
-                                                        >
+                                                    <div className='radius pricingM-btn2 mt-10 h-[57px] w-[228px] text-[20px] px-[16px]'>
+                                                        <Link to="/contactus">
                                                             Send Enquiry
-                                                        </a>
+                                                        </Link>
                                                     </div>
 
                                                 </div>

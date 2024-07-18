@@ -3,6 +3,7 @@ import "../styles/Footer.css";
 import Logo from "../assets/Logo.png";
 import { Link, useNavigate } from 'react-router-dom'
 import F1 from "../assets/fb1.png"
+import X from "../assets/Xlogo.png"
 export const Footer = () => {
     const navigate = useNavigate()
     const goto = (link) => {
@@ -22,10 +23,8 @@ export const Footer = () => {
                         <br />
                         <br />
                         <div className='flex gap-4 cursor-pointer'>
-                            <div className=' bg-black rounded-sm -full pt-[5px] px-[3px]'>
-                                <svg width="22px" height="20px" viewBox="0 0 1200 1227" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M714.163 519.284L1160.89 0H1055.03L667.137 450.887L357.328 0H0L468.492 681.821L0 1226.37H105.866L515.491 750.218L842.672 1226.37H1200L714.137 519.284H714.163ZM569.165 687.828L521.697 619.934L144.011 79.6944H306.615L611.412 515.685L658.88 583.579L1055.08 1150.3H892.476L569.165 687.854V687.828Z" fill="white" />
-                                </svg>
+                            <div className='  rounded-sm -full pt-[0px] px-[3px]'>
+                            <svg fill="#0055ff" width="30px" height="30px" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" stroke="#0055ff"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <title></title> <g id="Linkedln"> <path d="M26.49,30H5.5A3.35,3.35,0,0,1,3,29a3.35,3.35,0,0,1-1-2.48V5.5A3.35,3.35,0,0,1,3,3,3.35,3.35,0,0,1,5.5,2h21A3.35,3.35,0,0,1,29,3,3.35,3.35,0,0,1,30,5.5v21A3.52,3.52,0,0,1,26.49,30ZM9.11,11.39a2.22,2.22,0,0,0,1.6-.58,1.83,1.83,0,0,0,.6-1.38A2.09,2.09,0,0,0,10.68,8a2.14,2.14,0,0,0-1.51-.55A2.3,2.3,0,0,0,7.57,8,1.87,1.87,0,0,0,7,9.43a1.88,1.88,0,0,0,.57,1.38A2.1,2.1,0,0,0,9.11,11.39ZM11,13H7.19V24.54H11Zm13.85,4.94a5.49,5.49,0,0,0-1.24-4,4.22,4.22,0,0,0-3.15-1.27,3.44,3.44,0,0,0-2.34.66A6,6,0,0,0,17,14.64V13H13.19V24.54H17V17.59a.83.83,0,0,1,.1-.43,2.73,2.73,0,0,1,.7-1,1.81,1.81,0,0,1,1.28-.44,1.59,1.59,0,0,1,1.49.75,3.68,3.68,0,0,1,.44,1.9v6.15h3.85ZM17,14.7a.05.05,0,0,1,.06-.06v.06Z"></path> </g> </g></svg>
 
                             </div>
                             <div className=' rounded-full p-[3px]'>
@@ -33,6 +32,10 @@ export const Footer = () => {
                             </div>
                             <div className='rounded-full p-[3px]'>
                                 <svg width="24px" height="24px" viewBox="0 0 48 48" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" fill="#000000"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <title>Facebook-color</title> <desc>Created with Sketch.</desc> <defs> </defs> <g id="Icons" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"> <g id="Color-" transform="translate(-200.000000, -160.000000)" fill="#4460A0"> <path d="M225.638355,208 L202.649232,208 C201.185673,208 200,206.813592 200,205.350603 L200,162.649211 C200,161.18585 201.185859,160 202.649232,160 L245.350955,160 C246.813955,160 248,161.18585 248,162.649211 L248,205.350603 C248,206.813778 246.813769,208 245.350955,208 L233.119305,208 L233.119305,189.411755 L239.358521,189.411755 L240.292755,182.167586 L233.119305,182.167586 L233.119305,177.542641 C233.119305,175.445287 233.701712,174.01601 236.70929,174.01601 L240.545311,174.014333 L240.545311,167.535091 C239.881886,167.446808 237.604784,167.24957 234.955552,167.24957 C229.424834,167.24957 225.638355,170.625526 225.638355,176.825209 L225.638355,182.167586 L219.383122,182.167586 L219.383122,189.411755 L225.638355,189.411755 L225.638355,208 L225.638355,208 Z" id="Facebook"> </path> </g> </g> </g></svg>
+                            </div>
+
+                            <div className='rounded-full p-[3px]'>
+                            <img src={X} alt='X' className='h-[24px]' />
                             </div>
 
                         </div>
@@ -77,8 +80,14 @@ export const Footer = () => {
                                 <div className='text-[#060336] mb-3 ' style={{ fontWeight: "600", fontSize: "15px", lineHeight: "22.4px" }}>Help Center</div>
                                 <div className='text-[#444444] mb-3 cursor-pointer text-[14px] hover:text-[var(--theme)]' style={{ fontWeight: "400", fontSize: "14px", lineHeight: "22.4px" }}>Community</div>
                                 <div className='text-[#444444] mb-3 cursor-pointer text-[14px] hover:text-[var(--theme)]' style={{ fontWeight: "400", fontSize: "14px", lineHeight: "22.4px" }}>Knowledge</div>
-                                <div className='text-[#444444] mb-3 cursor-pointer text-[14px] hover:text-[var(--theme)]' style={{ fontWeight: "400", fontSize: "14px", lineHeight: "22.4px" }}>Terms and Conditions</div>
-                                <div className='text-[#444444] mb-3 cursor-pointer text-[14px] hover:text-[var(--theme)]' style={{ fontWeight: "400", fontSize: "14px", lineHeight: "22.4px" }}>Privacy</div>
+                                <div className='text-[#444444] mb-3 cursor-pointer text-[14px] hover:text-[var(--theme)]' style={{ fontWeight: "400", fontSize: "14px", lineHeight: "22.4px" }}>
+                                <Link to="/termsandconditions">
+                                Terms and Conditions
+                                </Link>
+                                </div>
+                                <div className='text-[#444444] mb-3 cursor-pointer text-[14px] hover:text-[var(--theme)]' style={{ fontWeight: "400", fontSize: "14px", lineHeight: "22.4px" }}><Link to="/privacy">
+                                Privacy
+                                </Link></div>
                                 <div className='text-[#444444] mb-3 cursor-pointer text-[14px] hover:text-[var(--theme)]' style={{ fontWeight: "400", fontSize: "14px", lineHeight: "22.4px" }}>Support</div>
                             </div>
                         </div>
