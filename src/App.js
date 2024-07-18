@@ -17,6 +17,9 @@ import MeetingForm from './pages/MeetingForm';
 import Services from './pages/Services';
 import { Routes, BrowserRouter, Route } from 'react-router-dom';
 import AboutUs from './pages/AboutUs';
+import TermsOfUse from './pages/TermsOfUse';
+import PrivacyPolicy from './pages/PrivacyPolicy';
+import MeetingCalender from './pages/MeetingCalender';
 // https://www.figma.com/design/OWcieRQi0UaZrbx5sQM9jJ/NMOLD?node-id=0-1&t=Fz6quNMjalRuuomr-0
 function App() {
   return (
@@ -25,12 +28,14 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/contactus" element={<ContactUs />} />
-        <Route path="/ourservices" element={<Services />}/>
-        <Route path="/pricing" element={<PricingMain />}/>
-        <Route path="/aboutus" element={<AboutUs/>}/>
-        <Route path="/form" element={<Form/>}/>
+        <Route path="/ourservices" element={<Services />} />
+        <Route path="/pricing" element={<PricingMain />} />
+        <Route path="/aboutus" element={<AboutUs />} />
+        <Route path="/form" element={<Form />} />
+        <Route path="/meetingform" element={<MeetingForm />} />
+        <Route path="/privacy" element={<PrivacyPolicy />} />
+        <Route path="/termsandconditions" element={<TermsOfUse />} />
       </Routes>
-      
       <Footer />
       <CopyrightBanner />
     </>
