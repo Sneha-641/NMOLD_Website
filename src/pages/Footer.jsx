@@ -4,7 +4,7 @@ import Logo from "../assets/Logo.png";
 import { Link, useNavigate } from 'react-router-dom'
 import F1 from "../assets/fb1.png"
 import X from "../assets/Xlogo.png"
-export const Footer = () => {
+export const Footer = ({state,setState}) => {
     const navigate = useNavigate()
     const goto = (link) => {
         navigate(link)
@@ -46,28 +46,28 @@ export const Footer = () => {
                         <div className=''>
                             <div className='w-[100px]'>
                                 <div className='text-[#060336] mb-3 text-[16px]' style={{ fontWeight: "600", fontSize: "15px", lineHeight: "22.4px" }}>Explore</div>
-                                <div className='text-[#444444] mb-3 cursor-pointer text-[14px] hover:text-[var(--theme)]' style={{ fontWeight: "400", fontSize: "14px", lineHeight: "22.4px" }}><div onClick={()=>{goto("/")}}>
+                                <div className='text-[#444444] mb-3 cursor-pointer text-[14px] hover:text-[var(--theme)]' style={{ fontWeight: "400", fontSize: "14px", lineHeight: "22.4px" }}><div onClick={()=>{setState(0);goto("/")}}>
                                     Home
                                 </div></div>
-                                <div className='text-[#444444] mb-3 cursor-pointer text-[14px] hover:text-[var(--theme)]' style={{ fontWeight: "400", fontSize: "14px", lineHeight: "22.4px" }}><div onClick={()=>{goto("/aboutus")}}>
+                                <div className='text-[#444444] mb-3 cursor-pointer text-[14px] hover:text-[var(--theme)]' style={{ fontWeight: "400", fontSize: "14px", lineHeight: "22.4px" }}><div onClick={()=>{setState(1);goto("/aboutus")}}>
 
 
                                     About Us
                                 </div>
                                 </div>
-                                <div className='text-[#444444] mb-3 cursor-pointer text-[14px] hover:text-[var(--theme)]' style={{ fontWeight: "400", fontSize: "14px", lineHeight: "22.4px" }}><div onClick={()=>{goto("/ourservices")}}>
+                                <div className='text-[#444444] mb-3 cursor-pointer text-[14px] hover:text-[var(--theme)]' style={{ fontWeight: "400", fontSize: "14px", lineHeight: "22.4px" }}><div onClick={()=>{setState(2);goto("/ourservices")}}>
 
 
                                     Services
                                 </div>
                                 </div>
-                                <div className='text-[#444444] mb-3 cursor-pointer text-[14px] hover:text-[var(--theme)]' style={{ fontWeight: "400", fontSize: "14px", lineHeight: "22.4px" }}><div onClick={()=>{goto("/pricing")}}>
+                                <div className='text-[#444444] mb-3 cursor-pointer text-[14px] hover:text-[var(--theme)]' style={{ fontWeight: "400", fontSize: "14px", lineHeight: "22.4px" }}><div onClick={()=>{setState(3);goto("/pricing")}}>
 
 
                                     Pricing
                                 </div>
                                 </div>
-                                <div className='text-[#444444] mb-3 cursor-pointer text-[14px] hover:text-[var(--theme)]' style={{ fontWeight: "400", fontSize: "14px", lineHeight: "22.4px" }}><div onClick={()=>{goto("/contactus")}}>
+                                <div className='text-[#444444] mb-3 cursor-pointer text-[14px] hover:text-[var(--theme)]' style={{ fontWeight: "400", fontSize: "14px", lineHeight: "22.4px" }}><div onClick={()=>{setState(4);goto("/contactus")}}>
 
 
                                     Contact Us
@@ -85,7 +85,7 @@ export const Footer = () => {
                                 Terms and Conditions
                                 </Link>
                                 </div>
-                                <div className='text-[#444444] mb-3 cursor-pointer text-[14px] hover:text-[var(--theme)]' style={{ fontWeight: "400", fontSize: "14px", lineHeight: "22.4px" }}><Link to="/privacy">
+                                <div className='text-[#444444] mb-3 cursor-pointer text-[14px] hover:text-[var(--theme)]' style={{ fontWeight: "400", fontSize: "14px", lineHeight: "22.4px" }} onClick={()=>{setState(-1)}}><Link to="/privacy">
                                 Privacy
                                 </Link></div>
                                 <div className='text-[#444444] mb-3 cursor-pointer text-[14px] hover:text-[var(--theme)]' style={{ fontWeight: "400", fontSize: "14px", lineHeight: "22.4px" }}>Support</div>

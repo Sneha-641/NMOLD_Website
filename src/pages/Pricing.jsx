@@ -3,6 +3,7 @@ import '../styles/Pricing.css'; // Import a CSS file for styling
 import { Link } from 'react-router-dom';
 
 const Pricing = () => {
+    // const navigate=Navigator();
     return (
         <div className="pricing-container">
             <div className=''>
@@ -21,8 +22,8 @@ const Pricing = () => {
                     </ul>
                     <div className='price-choose-main '>
                         <div className="price price-choose">$123 /month</div>
-                        <button className="choose-button" ><Link to="/form">
-                            <div className="">
+                        <button className="choose-button" onClick={()=>{}} ><Link to="/form">
+                            <div className="w-full h-full">
                                 Choose
 
                             </div>

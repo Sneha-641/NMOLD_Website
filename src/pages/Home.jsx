@@ -21,7 +21,7 @@ const Home = () => {
                 placeholder='Enter Your Message'
               />
               <div className='btn float-right w-[140px] h-[46px] flex items-center text-center justify-center textsize'>
-                Send
+                Search
               </div>
             </div>
           </div>

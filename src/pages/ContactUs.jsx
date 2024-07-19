@@ -2,34 +2,71 @@ import React from 'react'
 import "../styles/ContactUs.css"
 import "../backend/FirebaseMain"
 import { collection, addDoc, getFirestore } from "firebase/firestore";
+import emailjs from '@emailjs/browser';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+import { messages } from "../helper/Messages"
 const ContactUs = () => {
+
+    const notify = (i) => toast(messages[i]);
     const [state, setState] = React.useState({
         firstName: "",
         lastName: "",
         email: "",
         phoneNumber: "",
-        subject: "",
-        // message: "",
         cname: "",
-        clocation:"",
+        clocation: "",
+        services: ""
     })
+    const form = React.useRef();
+    const sendMessage = async () => {
+        emailjs.sendForm(process.env.REACT_APP_EMAIL_SERVICE_ID, process.env.REACT_APP_EMAIL_TEMPLATE_ID, form.current, process.env.REACT_APP_EMAIL_PUBLIC_KEY)
+            .then((result) => {
+                notify(0);
+                window.location.href = "/"
+            }, (error) => {
+                emailjs.sendForm(process.env.REACT_APP_EMAIL_SERVICE_ID2, process.env.REACT_APP_EMAIL_TEMPLATE_ID2, form.current, process.env.REACT_APP_EMAIL_PUBLIC_KEY2).then((result) => {
+                    notify(0);
+                    window.location.href = "/"
+                }, (error) => {
+                    notify(1);
+                });
+            });
+    }
+
     const handlesubmit = async () => {
         try {
-            if (state.firstName === "" || state.lastName === "" || state.email === "" || state.phoneNumber === "" || state.subject === "" || state.cname === "", state.clocation === "") {
-                alert("Please fill all the fields")
+            console.log(messages)
+            if (state.firstName === "" || state.lastName === "" || state.email === "" || state.phoneNumber === "" || state.subject === "" || state.cname === "", state.clocation === "" || state.services === "") {
+                notify(2);
                 return;
             }
             const db = getFirestore();
-            const docRef = await addDoc(collection(db, "todos"), {
+            const docRef = await addDoc(collection(db, "ContactUsMessages"), {
                 todo: state,
             });
-            console.log("Document written with ID: ", docRef);
+            sendMessage();
+            alert("Message Sent Successfully")
+            window.location.reload();
         } catch (error) {
-            console.log(error, "___")
+            notify(1);
         }
     }
+
     return (
         <>
+            <ToastContainer
+                position="top-center"
+                autoClose={5000}
+                hideProgressBar={false}
+                newestOnTop={false}
+                closeOnClick
+                rtl={false}
+                pauseOnFocusLoss
+                draggable
+                pauseOnHover
+                theme="light"
+            />
             <div className='w-full flex justify-center items-center gap-10 mt-8'>
                 <div className='relative'>
                     <div className=' '>
@@ -71,7 +108,9 @@ const ContactUs = () => {
                                         <path d="M20 10.999H22C22 5.869 18.127 2 12.99 2V4C17.052 4 20 6.943 20 10.999Z" fill="#F7F6FF" />
                                         <path d="M13 8.00024C15.103 8.00024 16 8.89724 16 11.0002H18C18 7.77524 16.225 6.00024 13 6.00024V8.00024ZM16.422 13.4432C16.2299 13.2686 15.9774 13.1754 15.7178 13.1835C15.4583 13.1915 15.212 13.3001 15.031 13.4862L12.638 15.9472C12.062 15.8372 10.904 15.4762 9.71204 14.2872C8.52004 13.0942 8.15904 11.9332 8.05204 11.3612L10.511 8.96724C10.6975 8.78637 10.8062 8.54006 10.8142 8.28045C10.8222 8.02083 10.7289 7.76828 10.554 7.57624L6.85904 3.51324C6.68408 3.3206 6.44092 3.20374 6.18119 3.1875C5.92146 3.17125 5.66564 3.2569 5.46804 3.42624L3.29804 5.28724C3.12515 5.46075 3.02196 5.69169 3.00804 5.93624C2.99304 6.18624 2.70704 12.1082 7.29904 16.7022C11.305 20.7072 16.323 21.0002 17.705 21.0002C17.907 21.0002 18.031 20.9942 18.064 20.9922C18.3086 20.9786 18.5394 20.8749 18.712 20.7012L20.572 18.5302C20.7415 18.3328 20.8273 18.077 20.8113 17.8173C20.7952 17.5576 20.6785 17.3143 20.486 17.1392L16.422 13.4432Z" fill="#F7F6FF" />
                                     </svg><div className=''>
-                                        +91 9876543210
+                                        <a href="tel: +91987654321">
+                                            +91 9876543210
+                                        </a>
                                     </div>
                                 </div>
                                 <div className='pl-[2rem] pt-[2.5rem] flex gap-3'>
@@ -91,7 +130,7 @@ const ContactUs = () => {
                                     </div>
                                 </div>
                                 <div className=''>
-                                    <div className='flex absolute bottom-16 gap-2 left-5'>
+                                    <div className='flex absolute bottom-16 gap-2 left-5 justify-center items-center'>
                                         <div className=' p-1 rounded-full cursor-pointer hover:text-black'>
 
                                             <svg fill="white" width="30px" height="30px" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" stroke="#0055ff"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <title></title> <g id="Linkedln"> <path d="M26.49,30H5.5A3.35,3.35,0,0,1,3,29a3.35,3.35,0,0,1-1-2.48V5.5A3.35,3.35,0,0,1,3,3,3.35,3.35,0,0,1,5.5,2h21A3.35,3.35,0,0,1,29,3,3.35,3.35,0,0,1,30,5.5v21A3.52,3.52,0,0,1,26.49,30ZM9.11,11.39a2.22,2.22,0,0,0,1.6-.58,1.83,1.83,0,0,0,.6-1.38A2.09,2.09,0,0,0,10.68,8a2.14,2.14,0,0,0-1.51-.55A2.3,2.3,0,0,0,7.57,8,1.87,1.87,0,0,0,7,9.43a1.88,1.88,0,0,0,.57,1.38A2.1,2.1,0,0,0,9.11,11.39ZM11,13H7.19V24.54H11Zm13.85,4.94a5.49,5.49,0,0,0-1.24-4,4.22,4.22,0,0,0-3.15-1.27,3.44,3.44,0,0,0-2.34.66A6,6,0,0,0,17,14.64V13H13.19V24.54H17V17.59a.83.83,0,0,1,.1-.43,2.73,2.73,0,0,1,.7-1,1.81,1.81,0,0,1,1.28-.44,1.59,1.59,0,0,1,1.49.75,3.68,3.68,0,0,1,.44,1.9v6.15h3.85ZM17,14.7a.05.05,0,0,1,.06-.06v.06Z"></path> </g> </g></svg>
@@ -117,14 +156,14 @@ const ContactUs = () => {
                                 </div>
                             </div>
                         </div>
-                        <div className=''>
+                        <form ref={form} className=''>
                             <div className='w-[611px] flex flex-col gap-10 bg-red-500f h-[647px] mt-10 relative'>
                                 <div className='flex gap-[2rem] contact-part1'>
                                     <div className='flex flex-col w-[278px]'>
                                         <label>
                                             First Name
                                         </label>
-                                        <input className='' placeholder='John' value={
+                                        <input name="firstName" className='' placeholder='John' value={
                                             state.firstName
                                         } onChange={
                                             (e) => {
@@ -148,7 +187,9 @@ const ContactUs = () => {
                                                     lastName: e.target.value
                                                 }))
                                             }
-                                        } />
+                                        }
+                                            name="lastName"
+                                        />
                                     </div>
                                 </div>
                                 <div className='flex gap-[2rem] contact-part1'>
@@ -158,7 +199,7 @@ const ContactUs = () => {
                                         </label>
                                         <input className='' placeholder='Business Name'
                                             value={
-                                                state.email
+                                                state.cname
                                             } onChange={
                                                 (e) => {
                                                     setState((prev) => ({
@@ -167,15 +208,16 @@ const ContactUs = () => {
                                                     }))
                                                 }
                                             }
+                                            name="cname"
                                         />
                                     </div>
                                     <div className='flex flex-col w-[278px]'>
                                         <label>
-                                            Complay Location/URL
+                                            Company Location/URL
                                         </label>
                                         <input className='' type="text" placeholder='https://example.xxx'
                                             value={
-                                                state.phoneNumber
+                                                state.clocation
                                             } onChange={
                                                 (e) => {
                                                     setState((prev) => ({
@@ -184,6 +226,7 @@ const ContactUs = () => {
                                                     }))
                                                 }
                                             }
+                                            name="clocation"
                                         />
                                     </div>
                                 </div>
@@ -202,8 +245,10 @@ const ContactUs = () => {
                                                         ...prev,
                                                         email: e.target.value
                                                     }))
+
                                                 }
                                             }
+                                            name="email"
                                         />
                                     </div>
                                     <div className='flex flex-col w-[278px]'>
@@ -221,21 +266,23 @@ const ContactUs = () => {
                                                     }))
                                                 }
                                             }
+                                            name="phoneNumber"
                                         />
                                     </div>
                                 </div>
                                 <div className='text-[var(--theme)]'>
-                                    Category:
+                                    Services:
                                     <div className='contact-part1 flex justify-left gap-6 items-center mt-5'>
                                         <div className='flex justify-center gap-2 items-center '>
                                             <input type="radio" name="radioform" value="Web Development" className='mt-[-10px]' onClick={
                                                 (e) => {
                                                     setState((prev) => ({
                                                         ...prev,
-                                                        subject: e.target.value
+                                                        services: e.target.value
                                                     }))
                                                 }
-                                            } />
+                                            }
+                                            />
                                             <label>Web Development</label>
                                         </div>
                                         <div className='flex justify-center gap-2 items-center'>
@@ -244,7 +291,7 @@ const ContactUs = () => {
                                                     (e) => {
                                                         setState((prev) => ({
                                                             ...prev,
-                                                            subject: e.target.value
+                                                            services: e.target.value
                                                         }))
                                                     }}
                                             />
@@ -256,7 +303,7 @@ const ContactUs = () => {
                                                     (e) => {
                                                         setState((prev) => ({
                                                             ...prev,
-                                                            subject: e.target.value
+                                                            services: e.target.value
                                                         }))
                                                     }}
                                             />
@@ -268,7 +315,7 @@ const ContactUs = () => {
                                                     (e) => {
                                                         setState((prev) => ({
                                                             ...prev,
-                                                            subject: e.target.value
+                                                            services: e.target.value
                                                         }))
                                                     }}
                                             />
@@ -276,31 +323,11 @@ const ContactUs = () => {
                                         </div>
                                     </div>
                                 </div>
-                                {/* <div className='contact-part1'>
-                                    <div className=' flex flex-col'>
-                                        <label>
-                                            Message
-                                        </label>
-                                        <input className='w-[96%]'
-                                            value={
-                                                state.message
-                                            } onChange={
-                                                (e) => {
-                                                    setState((prev) => ({
-                                                        ...prev,
-                                                        message: e.target.value
-                                                    }))
-                                                }
-                                            }
-                                        />
-                                    </div>
-                                </div> */}
                                 <div className='flex justify-end items-end w-[95%]'>
                                     <div className='btn h-[54px] w-[214px] cursor-pointer'
                                         onClick={
                                             () => {
                                                 handlesubmit();
-                                                // console.log(state)
                                             }
                                         }
                                     >
@@ -308,7 +335,7 @@ const ContactUs = () => {
                                     </div>
                                 </div>
                             </div>
-                        </div>
+                        </form>
                     </div>
                 </div>
             </div>

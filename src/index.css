@@ -9,3 +9,7 @@ body {
 code {
   font-family: "Plus Jakarta Sans", sans-serif;
 }
+
+.cursor{
+  cursor: pointer;
+}

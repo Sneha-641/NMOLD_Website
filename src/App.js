@@ -20,11 +20,13 @@ import AboutUs from './pages/AboutUs';
 import TermsOfUse from './pages/TermsOfUse';
 import PrivacyPolicy from './pages/PrivacyPolicy';
 import MeetingCalender from './pages/MeetingCalender';
+import React from 'react';
 // https://www.figma.com/design/OWcieRQi0UaZrbx5sQM9jJ/NMOLD?node-id=0-1&t=Fz6quNMjalRuuomr-0
 function App() {
+  const [state,setState]=React.useState(0);
   return (
     <>
-      <Navbar />
+      <Navbar state={state} setState={setState}  />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/contactus" element={<ContactUs />} />
@@ -36,7 +38,7 @@ function App() {
         <Route path="/privacy" element={<PrivacyPolicy />} />
         <Route path="/termsandconditions" element={<TermsOfUse />} />
       </Routes>
-      <Footer />
+      <Footer state={state} setState={setState}/>
       <CopyrightBanner />
     </>
   );

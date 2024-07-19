@@ -38,3 +38,6 @@ body{
   line-height: 59.52px;
   text-align: center;
 }
+.cursor{
+  cursor: pointer;
+}

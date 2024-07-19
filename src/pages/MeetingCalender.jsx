@@ -1,26 +1,75 @@
 import React from 'react'
 import { useState } from 'react';
 import Calendar from 'react-calendar';
+import { collection, addDoc, getFirestore } from "firebase/firestore";
 import "../styles/MeetingCalender.css"
-// import 'react-calendar/dist/Calendar.css';
+import emailjs from '@emailjs/browser';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+import {messages} from '../helper/Messages';
 const MeetingCalender = () => {
+
     const dates = ["9:00 AM", "9:30 AM", "10:00 AM", "10:30 AM", "11:00 AM", "11:30 AM", "12:00 AM", "12:30 PM", "1:00 PM", "1:30 PM", "2:00 PM", "2:30 PM", "3:00 PM", "3:30 PM", "4:00 PM", "4:30 PM", "5:00 PM", "5:30 PM", "6:00 PM"]
     const [date, setDate] = useState(new Date());
-    const [selected, setSelected] = useState(0);
-    function fun() {
-        var s = ""
-        for (var i = 9; i <= 12; i++) {
-            s = s + `"${i}` + ':00 AM",'
-            s = s + `"${i}` + ':30 AM",'
-
-        }
-        console.log(s);
+    const [selected, setSelected] = useState(-1);
+    const [duration, setDuration] = useState("302 minutes");
+    const form = React.useRef();
+    const notify = (i) => toast(messages[i]);
+    const [state, setState] = useState({
+        firstName: "",
+        lastName: "",
+        phone: "",
+        email: "",
+        company: ""
+    })
+    const sendMessage = async () => {
+        emailjs.sendForm(process.env.REACT_APP_EMAIL_SERVICE_ID, process.env.REACT_APP_EMAIL_TEMPLATE_ID, form.current, process.env.REACT_APP_EMAIL_PUBLIC_KEY)
+            .then((result) => {
+                notify(0);
+                window.location.href = "/"
+            }, (error) => {
+                emailjs.sendForm(process.env.REACT_APP_EMAIL_SERVICE_ID2, process.env.REACT_APP_EMAIL_TEMPLATE_ID2, form.current, process.env.REACT_APP_EMAIL_PUBLIC_KEY2).then((result) => {
+                    notify(0);
+                    window.location.href = "/"
+                }, (error) => {
+                    notify(1);
+                });
+            });
     }
-    React.useEffect(() => {
-        fun()
-    }, [])
+
+    const handleSubmit = async () => {
+        if (state.firstName == "" || state.lastName == "" || state.phone == "" || state.email == "" || state.company == "") {
+            notify(2);
+            return;
+        }
+        try {
+            const db = getFirestore();
+            const docRef = await addDoc(collection(db, "Scheduled Meetings"), {
+                info: state,
+                timing: dates[selected],
+                date: date.toDateString(),
+                duration: duration
+            });
+            sendMessage();
+        } catch (error) {
+            notify(1);
+        }
+    }
+
     return (
         <>
+            <ToastContainer
+                position="top-center"
+                autoClose={5000}
+                hideProgressBar={false}
+                newestOnTop={false}
+                closeOnClick
+                rtl={false}
+                pauseOnFocusLoss
+                draggable
+                pauseOnHover
+                theme="light"
+            />
             <div className=''>
                 <div className=''>
 
@@ -43,15 +92,31 @@ const MeetingCalender = () => {
                     </div>
                     <div className='h-full font-semibold px-[3rem] text-center'>
                         <div className='text-[2rem]'>
-                            Meeting Duration
+                            Meeting Timings
                         </div>
                         <div className='btn mt-4 py-2 cursor-pointer ' onClick={
-                            ()=>{
+                            () => {
+                                if (selected === -1) {
+                                    alert("Please select a time slot && duration")
+                                    return
+                                }
                                 // scroll down
                                 document.querySelector('.form-schedule-main-box').scrollIntoView({ behavior: 'smooth' });
                             }
                         }>
-                            Select Duration
+                            Continue -&gt;
+                        </div>
+                        <div className=' mt-2 flex w-full justify-evenly items-center '>
+                            <div className={`border-xl border-black border rounded-md py-1 ${duration === "30 minutes" ? "btn" : ""} px-2 w-[100px] cursor-pointer`} onClick={() => {
+                                setDuration("30 minutes")
+                            }}>
+                                30 min
+                            </div>
+                            <div className={`border-xl border-black border rounded-md py-1 w-[100px] ${duration === "1 hour" ? "btn" : ""} cursor-pointer`} onClick={() => {
+                                setDuration("1 hour")
+                            }}>
+                                1 hr
+                            </div>
                         </div>
                         <div className=' font-semibold mt-3 text-left'>
                             What time works best
@@ -82,51 +147,77 @@ const MeetingCalender = () => {
                     </div>
                 </div>
             </div>
-            <div className={``}>
+            {duration != "302 minutes" && selected != -1 && <div className={``}>
                 <div className="flex items-center justify-center min-h-screen mt-4 form-schedule-main-box">
                     <div className="bg- p-10 rounded-lg shadow-md w-full max-w-4xl border border-blue-900">
                         <h1 className="text-2xl font-bold mb-4 text-left">Your Information</h1>
-                        <div className='mb-[1rem]'>
-                            {/* date */}
-                            <div className="flex">
-                                <div className="text-lg font-semibold text-[vtar(--theme)]">{date.toDateString("DD-MM-YYYY")} &nbsp;</div>
-                                <div className='text-lg font-semibold text-[tvar(--theme)]'>{dates[selected]}</div>
+                        <form ref={form} className="space-y-6 pb-[3rem] ">
+                            <div className='mb-[1rem]'>
+                                {/* date */}
+                                <div className="flex">
+                                    <div className='text-lg font-semibold text-[tvar(--theme)]'>{dates[selected]}&nbsp;</div> &nbsp;
+                                    <div className="text-lg font-semibold text-[vtar(--theme)]">{date.toDateString("DD-MM-YYYY")} &nbsp;</div>
                                 </div>
-                        </div>
-                        <form className="space-y-6 pb-[3rem] ">
+                                <div className=' font-semibold'>
+                                    Meeting Duration: {duration}
+                                </div>
+                            </div>
+                            <input type="hidden" name="timing" value={dates[selected]} />
+                            <input type="hidden" name="date" value={date.toDateString()} />
+                            <input type="hidden" name="duration" value={duration} />
                             <div className="grid grid-cols-2 gap-6">
                                 <div>
                                     <label className="block text-sm font-medium text-gray-700 text-left">First Name</label>
-                                    <input type="text" className="mt-1 block w-full p-2 border border-gray-300 rounded-md" placeholder="Enter First Name" />
+                                    <input type="text" className="mt-1 block w-full p-2 border border-gray-300 rounded-md" placeholder="Enter First Name"
+                                        onClick={(e) => {
+                                            setState({ ...state, firstName: e.target.value })
+                                        }}
+                                        name="firstName"
+                                    />
                                 </div>
                                 <div>
                                     <label className="block text-sm font-medium text-gray-700 text-left">Last Name</label>
-                                    <input type="text" className="mt-1 block w-full p-2 border border-gray-300 rounded-md" placeholder="Enter Last Name" />
+                                    <input type="text" className="mt-1 block w-full p-2 border border-gray-300 rounded-md" placeholder="Enter Last Name" onClick={(e) => {
+                                        setState({ ...state, lastName: e.target.value })
+                                    }}
+                                        name="lastName"
+                                    />
                                 </div>
                             </div>
                             <div>
                                 <label className="block text-sm font-medium text-gray-700 text-left">Phone No.</label>
-                                <input type="text" className="mt-1 block w-full p-2 border border-gray-300 rounded-md" placeholder="Enter Phone No." />
+                                <input type="number" className="mt-1 block w-full p-2 border border-gray-300 rounded-md" placeholder="Enter Phone No." onClick={(e) => {
+                                    setState({ ...state, phone: e.target.value })
+                                }}
+                                    name='phone'
+                                />
                             </div>
                             <div>
                                 <label className="block text-sm font-medium text-gray-700 text-left">E-Mail</label>
-                                <input type="email" className="mt-1 block w-full p-2 border border-gray-300 rounded-md" placeholder="Enter E-mail ID" />
+                                <input type="email" className="mt-1 block w-full p-2 border border-gray-300 rounded-md" placeholder="Enter E-mail ID" onClick={(e) => {
+                                    setState({ ...state, email: e.target.value })
+                                }}
+                                    name="email"
+                                />
                             </div>
                             <div>
                                 <label className="block text-sm font-medium text-gray-700 text-left">Company Name</label>
-                                <input type="text" className="mt-1 block w-full p-2 border border-gray-300 rounded-md" placeholder="Enter Company Name" />
+                                <input type="text" className="mt-1 block w-full p-2 border border-gray-300 rounded-md" placeholder="Enter Company Name" onClick={(e) => {
+                                    setState({ ...state, company: e.target.value })
+                                }}
+                                    name="company"
+                                />
                             </div>
-
                             <div className="flex justify-between">
-                                <button type="button" className="px-10 py-2 bg-white text-gray-700 rounded-md border border-blue-600" onClick={()=>{
+                                <button type="button" className="px-10 py-2 bg-white text-gray-700 rounded-md border border-blue-600" onClick={() => {
                                     document.querySelector('.cal-par-box').scrollIntoView({ behavior: 'smooth' });
                                 }}>Back</button>
-                                <button type="submit" className="px-10 py-2 bg-[var(--theme)] text-white rounded-md">Request</button>
+                                <div type="submit" className="cursor-pointer px-10 py-2 bg-[var(--theme)] text-white rounded-md" onClick={() => { handleSubmit() }}>Request</div>
                             </div>
                         </form>
                     </div>
                 </div>
-            </div>
+            </div>}
         </>
     );
 }
