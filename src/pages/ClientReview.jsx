@@ -27,10 +27,9 @@ const ClientReview = () => {
         setTimeout(func, 2800);
     }, [sec])
     return (
-        <div className='w-full mb-[1rem]'>
-            <div className='flex justify-center'>
+        <div className='w-full mb-[1rem] max-[900px]:mt-[5rem] max-[520px]:mt-[10rem] max-[450px]:mt-[13rem] '>
+            <div className='flex justify-center text-[36px] max-[400px]:text-[22px] max-[300px]:leading-[20px]'>
                 <div className='' style={{
-                    fontSize: "36px",
                     fontWeight: "700",
                     lineHeight: "43.2px",
                     textAlign: "center",
@@ -38,15 +37,15 @@ const ClientReview = () => {
                 }}>
                     Here is what our Clients are saying About us
                 </div>
-            </div>
+            </div> 
             <div className='flex justify-center items-center cursor-pointer'>
-                <div className='text-[94px] text-[#4F45EB]'>
+                <div className='text-[94px] text-[#4F45EB] max-[900px]:hidden'>
                     &lt;
                 </div>
-                <div className='w-[850px]'>
+                <div className='w-[850px] max-md:w-[95%] max-sm:w-[99%]'>
                     <Slider slides={slides} />
                 </div>
-                <div className='text-[94px] text-[#4F45EB]'>
+                <div className='text-[94px] text-[#4F45EB] max-[900px]:hidden'>
                     &gt;
                 </div>
 

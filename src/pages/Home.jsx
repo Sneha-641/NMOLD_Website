@@ -49,9 +49,9 @@ const Home = () => {
         </div>
       </div>
       <WhyChooseUs />
+      <ClientReview />
       {/* 
       <Delivers />
-      <ClientReview />
       <Pricing />
       <ContactUs /> */}
     </>

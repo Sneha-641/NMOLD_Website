@@ -11,7 +11,7 @@ const WhyChooseUs = () => {
                 <div className='heading smtext2'>
                     Why Choose Us?
                 </div>
-                <div className='w-full flex justify-center mt-[5rem]'>
+                <div className='w-full flex justify-center mt-[5rem] max-md:hidden'>
                     <table className='w-[80%] max-lg:w-[90%] max-md:hidden'>
                         <tr>
                             <td className=''>
