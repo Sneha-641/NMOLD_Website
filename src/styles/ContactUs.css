@@ -1,6 +1,11 @@
 .contact-us-sub-left {
     background: url("../assets/Frame1.png");
 }
+@media (max-width: 950px) {
+    .contact-us-sub-left{
+        background: url("../assets/Frame12.png");
+    }
+}
 .contact-part1 > div{
     background: none;
     background-color: transparent;
