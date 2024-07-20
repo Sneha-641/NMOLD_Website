@@ -26,7 +26,7 @@ function App() {
   const [state,setState]=React.useState(0);
   return (
     <>
-      <Navbar state={state} setState={setState}  />
+      {/* <Navbar state={state} setState={setState}  /> */}
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/contactus" element={<ContactUs />} />
@@ -38,8 +38,8 @@ function App() {
         <Route path="/privacy" element={<PrivacyPolicy />} />
         <Route path="/termsandconditions" element={<TermsOfUse />} />
       </Routes>
-      <Footer state={state} setState={setState}/>
-      <CopyrightBanner />
+      {/* <Footer state={state} setState={setState}/> */}
+      {/* <CopyrightBanner /> */}
     </>
   );
 }
