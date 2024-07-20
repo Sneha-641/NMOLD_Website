@@ -344,7 +344,7 @@ const ContactUs = () => {
                                         </div>
                                     </div>
                                 </div>
-                                <div className='flex justify-end items-end w-[95%]'>
+                                <div className='flex justify-end items-end max-[900px]:items-start max-[900px]:justify-start w-[95%]'>
                                     <div className='btn h-[54px] w-[214px] cursor-pointer'
                                         onClick={
                                             () => {
