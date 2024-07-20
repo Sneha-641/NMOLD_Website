@@ -7,12 +7,12 @@ const Pricing = () => {
     return (
         <div className="pricing-container">
             <div className=''>
-                <h2 className='heading'>Transparent Pricing for You</h2>
-                <p className='text-[#6A6A6A] mt-5 text-[16px]'>Start saving time today and choose your best plan</p>
+                <h2 className='heading max-sm:text-[30px]'>Transparent Pricing for You</h2>
+                <p className='text-[#6A6A6A] mt-5 max-sm:mt-2 text-[16px]'>Start saving time today and choose your best plan</p>
 
             </div>
 
-            <div className="pricing-plans mt-10 ">
+            <div className="pricing-plans max-[1100px]:col-auto mt-10 ">
                 <div className="pricing-plan relative pricing-plan-active">
                     <h3 className='pln-pricing justify-center text-center items-center flex'>Web Design</h3>
                     <ul>
