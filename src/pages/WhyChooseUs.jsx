@@ -129,7 +129,7 @@ const WhyChooseUs = () => {
                         </tr>
                     </table>
                 </div>
-                <div className='w-full flex justify-center items-center mt-[5rem]'>
+                <div className='w-full flex justify-center items-center mt-[0rem]'>
                     <table className='w-[95%] md:hidden'>
                         <tr>
                             <td className=''>
@@ -140,10 +140,10 @@ const WhyChooseUs = () => {
                             </td>
                         </tr>
                         <tr>
-                            <td className=''>
+                            <td className='w-[50%]'>
                                 <div className='' style={{
                                     fontFamily: "Plus Jakarta Sans, sans-serif",
-                                    fontSize: "27px",
+                                    fontSize: "23px",
                                     fontWeight: "700",
                                     lineHeight: "42px",
                                     textAlign: "left",
@@ -152,10 +152,10 @@ const WhyChooseUs = () => {
 
                                 </div>
                             </td>
-                            <td className=''>
+                            <td className='w-[50%]'>
                                 <div className='' style={{
                                     fontFamily: "Plus Jakarta Sans, sans-serif",
-                                    fontSize: "30px",
+                                    fontSize: "24px",
                                     fontWeight: "700",
                                     lineHeight: "42px",
                                     textAlign: "left",
@@ -168,7 +168,7 @@ const WhyChooseUs = () => {
                         <tr>
                             <td className=''>
                                 <div className='pr- whychooseus-content-div' style={{
-                                    fontSize: "16px",
+                                    fontSize: "13px",
                                     fontWeight: "400",
                                     lineHeight: "27.52px",
                                     textAlign: "left",
@@ -181,7 +181,7 @@ const WhyChooseUs = () => {
                             </td>
                             <td className=''>
                                 <div className='pr whychooseus-contenkt-div' style={{
-                                    fontSize: "16px",
+                                    fontSize: "13px",
                                     fontWeight: "400",
                                     lineHeight: "27.52px",
                                     textAlign: "left",
@@ -199,19 +199,19 @@ const WhyChooseUs = () => {
                 <div className='w-full flex justify-center items-center mt-[5rem]'>
                     <table className='w-[95%] md:hidden'>
                         <tr>
-                            <td className=''>
+                            <td className='w-[50%]'>
                                 <img src={Icon3} />
                             </td>
-                            <td className=''>
+                            <td className='w-[50%]'>
                                 <img src={Icon4} />
                             </td>
                         </tr>
                         <tr>
 
-                            <td className=''>
+                            <td className='w-[50%]'>
                                 <div className='' style={{
                                     fontFamily: "Plus Jakarta Sans, sans-serif",
-                                    fontSize: "30px",
+                                    fontSize: "24px",
                                     fontWeight: "700",
                                     lineHeight: "42px",
                                     textAlign: "left",
@@ -220,10 +220,10 @@ const WhyChooseUs = () => {
 
                                 </div>
                             </td>
-                            <td className=''>
+                            <td className='w-[50%]'>
                                 <div className='' style={{
                                     fontFamily: "Plus Jakarta Sans, sans-serif",
-                                    fontSize: "30px",
+                                    fontSize: "24px",
                                     fontWeight: "700",
                                     lineHeight: "42px",
                                     textAlign: "left",
@@ -237,7 +237,7 @@ const WhyChooseUs = () => {
 
                             <td className=''>
                                 <div className='pr-1 whychooseus-content-div' style={{
-                                    fontSize: "16px",
+                                    fontSize: "13px",
                                     fontWeight: "400",
                                     lineHeight: "27.52px",
                                     textAlign: "left",
@@ -249,7 +249,7 @@ const WhyChooseUs = () => {
                             </td>
                             <td className=''>
                                 <div className='pr-1 ' style={{
-                                    fontSize: "16px",
+                                    fontSize: "13px",
                                     fontWeight: "400",
                                     lineHeight: "27.52px",
                                     textAlign: "left",
