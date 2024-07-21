@@ -30,17 +30,17 @@ const AboutUs = () => {
                             </div>
                             <div className='flex gap-10 mt-[3rem]'>
                                 <div className='btn radius px-[16px] rounded-[8px] h-[43px] w-[fit-content] flex'>
-                                   <Link to="/ourservices">
-                                    Explore our Services
+                                    <Link to="/ourservices">
+                                        Explore our Services
 
-                                   </Link>
+                                    </Link>
                                 </div>
                                 <div className='text-[var(--theme)] border-[var(--theme)] border-[1px] radius px-[16px] rounded-[8px] h-[43px] w-[fit-content] flex justify-center items-center'>
-                                 <Link to="/contactus"
-                                 >
+                                    <Link to="/contactus"
+                                    >
 
-                                  Contact Us
-                                 </Link>  
+                                        Contact Us
+                                    </Link>
                                 </div>
                             </div>
                         </div>
@@ -83,7 +83,7 @@ const AboutUs = () => {
                             </div>
                             <div className='About-box-54 flex flex-col justify-center items-center'>
                                 <div className='About-sub55 flex'>
-                                <AnimatedNumbers
+                                    <AnimatedNumbers
                                         includeComma
                                         // className={styles.container}
                                         transitions={(index) => ({
@@ -105,7 +105,7 @@ const AboutUs = () => {
                             </div>
                             <div className='About-box-54 flex flex-col justify-center items-center'>
                                 <div className='About-sub55 flex'>
-                                <AnimatedNumbers
+                                    <AnimatedNumbers
                                         includeComma
                                         // className={styles.container}
                                         transitions={(index) => ({
@@ -127,7 +127,7 @@ const AboutUs = () => {
                             </div>
                             <div className='About-box-54 flex flex-col justify-center items-center'>
                                 <div className='About-sub55 flex'>
-                                <AnimatedNumbers
+                                    <AnimatedNumbers
                                         includeComma
                                         // className={styles.container}
                                         transitions={(index) => ({

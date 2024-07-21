@@ -120,41 +120,39 @@ const PricingMain = () => {
                 <div className=''>
                     <Pricing />
                 </div>
-                <div className='flex mt-[2rem] items-center justify-center'>
-                    <Link to="/contactus">
-                        <div className='h-[84px] w-[865px] pricingM-sub bg-white hover:bg-[var(--theme)] hover:text-white hover:cursor-pointer text-[#060336] text-center justify-center items-center flex'>
+                <div className='flex mt-[2rem] items-center justify-center max-[890px]:w-[100%]'>
+                    <Link to="/contactus" className='max-[890px]:w-[90%]'>
+                        <div className='h-[84px] max-[500px]:h-[50px] w-[865px] pricingM-sub bg-white hover:bg-[var(--theme)] hover:text-white hover:cursor-pointer text-[#060336] text-center justify-center items-center flex max-[890px]:w-[10%] max-[890px]:text-[28px]'>
                             Need a Customized Plan? Please Contact Us
                         </div>
                     </Link>
                 </div>
-                <div className='mt-[4rem]'>
-                    <div className='h-[795px] overflow-hidden'>
-                        <div className='w-full flex justify-center items-center'>
-                            <div className='w-[718px] flex justify-center items-center'>
-                                <div className='pricingM-sub2 text-center'>
-                                    We took the best parts of an agency and freelance marketplace
-                                </div>
-                            </div>
-
+                <div className='w-full flex justify-center items-center mt-6'>
+                    <div className='w-[718px] flex justify-center items-center'>
+                        <div className='pricingM-sub2 text-center'>
+                            We took the best parts of an agency and freelance marketplace
                         </div>
+                    </div>
+
+                </div>
+                <div className='mt-[4rem] max-[1000px]:overflow-scroll  max-[1000px]:w-[100vw]'>
+                    <div className='h-[795px] min-[1000px]:overflow-hidden'>
+
 
                         <div className='flex w-full justify-between items-center text-center text-[20px] font-bold mb-4 mt-4'>
-                            <div className='w-[28%] '>
+                            {/* <div className='w-[28%] '>
                                 &nbsp;
-                            </div>
-                            <div className=' w-[23%]'>
-                                Aloa
                             </div>
                             <div className=' w-[23%]'>
                                 Marketplace
                             </div>
                             <div className=' w-[26%]'>
                                 Agency
-                            </div>
+                            </div> */}
                         </div>
                         <div className=''>
                             <div className='pricingM-cards-main gap-[1%]  justify-around px-[3rem]'>
-                                <div className='w-[325px]   pt-10'>
+                                <div className='w-[325px] pt-10'>
                                     <div className=''>
                                         <div className='flex flex-col gap-[2.2rem]  w-[322px]'>
                                             {data.map((item, index) => (
@@ -180,6 +178,9 @@ const PricingMain = () => {
                                         <div className='flex justify-evenly gap-[15px]'>
                                             <div className='w-[325px] h-[755px]'>
                                                 <div className=''>
+                                                <div className='mt-[-5rem] text-center mb-[2.8rem] text-[20px] font-bold'>
+                                                        Aloa
+                                                    </div>
                                                     <div className='flex flex-col gap-[2.2rem]  w-[322px]'>
                                                         {data.map((item, index) => (
                                                             <>
@@ -202,7 +203,9 @@ const PricingMain = () => {
                                             <div className='w-[325px] h-[755px] mb-10'>
 
                                                 <div className=''>
-
+                                                <div className='mt-[-5rem] text-center mb-[2.8rem] text-[20px] font-bold'>
+                                                        Marketplace
+                                                    </div>
                                                     <div className='flex flex-col gap-[2.2rem]  w-[322px]'>
                                                         {data3.map((item, index) => (
                                                             <>
@@ -224,6 +227,10 @@ const PricingMain = () => {
                                             </div>
                                             <div className='w-[325px] h-[755px]'>
                                                 <div className=''>
+
+                                                <div className='mt-[-5rem] text-center mb-[2.8rem] text-[20px] font-bold'>
+                                                        Agency
+                                                    </div>
                                                     <div className='flex flex-col gap-[2.2rem]  w-[322px]'>
                                                         {data4.map((item, index) => (
                                                             <>
@@ -252,30 +259,26 @@ const PricingMain = () => {
                 </div>
                 <div className='mt-[4rem]'>
                     <div className=''>
-                        <div className='flex justify-center'>
-                            <div className='w-[80%]'>
+                        <div className='flex justify-center max-[780px]:items-center'>
+                            <div className='w-[80%]  max-[1100px]:w-[90%]  max-[860px]:w-[97%] max-[780px]:items-center'>
                                 {datad.map((item, index) => {
                                     return (<>
-                                        <div className={`flex ${index % 2 == 1 ? 'flex-row-reverse' : ''} gap-12 w-full mb-[10rem]`}>
-                                            <div className='h-[408px] w-[490px]'>
-                                                <img src={item.img} className='h-[408px] w-[490px]' />
+                                        <div className={`flex ${index % 2 == 1 ? 'flex-row-reverse' : ''} gap-12 w-full mb-[10rem] max-[780px]:flex-col max-[780px]:items-center `}>
+                                            <div className='h-[408px] w-[490px] max-[600px]:w-[98%] max-[600px]:h-[auto]'>
+                                                <img src={item.img} className='h-[408px] w-[490px] max-[600px]:w-[98%] max-[600px]:h-[auto]' />
                                             </div>
-                                            <div className='flex flex-col w-[601px]'>
-                                                <div className='text-[25px] text-[var(--theme)]'>
+                                            <div className='flex flex-col w-[601px] max-[600px]:w-[98%]'>
+                                                <div className='text-[25px] text-[var(--theme)] max-[630px]:text-[20px]'>
                                                     Own an App? Grow like Crazy with us.
                                                 </div>
-                                                <div className=' text-left text-[35px] font-semibold flex float-left justify-start items-start'>
+                                                <div className=' text-left text-[35px] max-[630px]:text-[25px] font-semibold flex float-left justify-start items-start'>
                                                     <p>
                                                         {item.heading}
 
                                                     </p>
                                                 </div>
-                                                <div className=' text-justify pt-3 ' style={{
-                                                    fontSize: "20px",
-                                                    fontWeight: "400",
-                                                    lineHeight: "37.2px",
-                                                    textAlign: "justified",
-                                                    color: "#6A6A6A",
+                                                <div className=' text-justify pt-3 pricingM-subpart3' style={{
+
                                                 }}>
                                                     {item.desc}
                                                 </div>
@@ -302,10 +305,10 @@ const PricingMain = () => {
                         </div>
                     </div>
                 </div>
-                <div className=''>
+                <div className='max-[505px]:mt-[-13rem] max-[705px]:mt-[-8rem]'>
                     <ClientReview />
                 </div>
-                <HaveAQues />
+                {/* <HaveAQues /> */}
             </div>
         </>
     )

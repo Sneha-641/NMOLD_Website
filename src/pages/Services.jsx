@@ -36,13 +36,9 @@ const Services = () => {
       case 'app':
         return (
           <>
-            <h2 className="text-3xl font-bold head-left-img">Converting Your App Ideas into Reality</h2>
-            <p className="pt-4 text-[#6A6A6A]" style={{
-              fontSize: "20px",
-              fontWeight: "400",
-              lineHeight: "32px",
-              letterSpacing: "1px",
-              textAlign: "justified"
+            <h2 className="text-3xl font-bold head-left-img max-[500px]:text-[25px]">Converting Your App Ideas into Reality</h2>
+            <p className="pt-4 text-[#6A6A6A] left-head-img01" style={{
+              
 
             }}>We believes in blending latest mobile technologies with trending user engagement practices to deliver a user-friendly mobile app. We build apps, games, utilities, and core technology products for android and iOS.</p>
           </>
@@ -50,13 +46,9 @@ const Services = () => {
       case 'uiux':
         return (
           <>
-            <h2 className="text-3xl font-bold head-left-img">UI Development as Per Your Needs</h2>
-            <p className="pt-4 text-[#6A6A6A]" style={{
-              fontSize: "20px",
-              fontWeight: "400",
-              lineHeight: "32px",
-              letterSpacing: "1px",
-              textAlign: "justified"
+            <h2 className="text-3xl font-bold head-left-img max-[500px]:text-[25px]">UI Development as Per Your Needs</h2>
+            <p className="pt-4 text-[#6A6A6A] left-head-img01" style={{
+              
 
             }}>We take pride in offering a bunch of innovative user interface designing services that not only incorporate the latest technologies but also comply with user experience practices. We don’t design apps but a unique user experience.</p>
           </>
@@ -64,12 +56,8 @@ const Services = () => {
       case 'digital':
         return (
           <>
-            <h2 className="text-xl font-bold head-left-img2 ">Crafting Memorable, Innovative Digital Experiences.</h2>
-            <p className="pt-4 text-[#6A6A6A]" style={{
-              fontWeight: "400",
-              lineHeight: "32px",
-              letterSpacing: "1px",
-              textAlign: "justified"
+            <h2 className="text-xl font-bold head-left-img2 max-[500px]:text-[25px]">Crafting Memorable, Innovative Digital Experiences.</h2>
+            <p className="pt-4 text-[#6A6A6A] left-head-img01" style={{
 
             }}>We specialize in crafting unique user experiences through our innovative user interface design services. Leveraging the latest technologies and adhering to best practices in user experience, we don’t just design apps—we create memorable digital journeys.</p>
           </>
@@ -77,13 +65,9 @@ const Services = () => {
       default:
         return (
           <>
-            <h2 className="text-3xl font-bold head-left-img3">We Create Experience Not Just Webs</h2>
-            <p className="pt-4 text-[#6A6A6A]" style={{
-              fontSize: "20px",
-              fontWeight: "400",
-              lineHeight: "32px",
-              letterSpacing: "1px",
-              textAlign: "justified"
+            <h2 className="text-3xl font-bold head-left-img3 max-[500px]:text-[25px]">We Create Experience Not Just Webs</h2>
+            <p className="pt-4 text-[#6A6A6A] left-head-img01" style={{
+              
 
             }}>Delivering high performance, secure, customized and seamlessly integrated websites, web apps, portals, and web applications as per your requirements. We are experts in mature and emerging web technologies.</p>
           </>
@@ -96,16 +80,16 @@ const Services = () => {
       case 'web':
         return (
           <>
-            <ul className="list-disc mt-4 ml-7 border-r-[1px] border-[black] border-solid">
-              <li className="p-2">
+            <ul className="list-disc mt-4 ml-7 border-r-[1px] max-[770px]:border-[0px] max-[770px]:ml-2 border-[black] border-solid">
+              <li className="p-2 max-[770px]:p-1">
                 <h3 className="font-bold">Expertise :</h3>
                 <p>Our team of professionals has extensive experience in various web development technologies and practices, ensuring that your website is built with the highest standards.</p>
               </li>
-              <li className="p-2">
+              <li className="p-2 max-[770px]:p-1">
                 <h3 className="font-bold">Security :</h3>
                 <p> We prioritize the security of your website, implementing best practices and robust measures to protect your data and users.</p>
               </li>
-              <li className="p-2">
+              <li className="p-2 max-[770px]:p-1">
                 <h3 className="font-bold">SEO and Performance Optimization :</h3>
                 <p> Our websites are optimized for search engines and performance, ensuring fast load times and better visibility online.</p>
               </li>
@@ -115,16 +99,16 @@ const Services = () => {
       case 'app':
         return (
           <>
-            <ul className="list-disc mt-4  ml-7 border-r-[1px] border-[black] border-solid">
-              <li className="p-2">
+            <ul className="list-disc mt-4  ml-7 border-r-[1px] max-[770px]:border-[0px] border-[black] border-solid">
+              <li className="p-2 max-[770px]:p-1">
                 <h3 className="font-bold">Expertise :</h3>
                 <p>Our team of professionals has extensive experience in various mobile app development technologies and practices, ensuring that your app is built with the highest standards.</p>
               </li>
-              <li className="p-2">
+              <li className="p-2 max-[770px]:p-1">
                 <h3 className="font-bold">Security :</h3>
                 <p>  We prioritize the security of your app, implementing best practices and robust measures to protect your data and users.</p>
               </li>
-              <li className="p-2">
+              <li className="p-2 max-[770px]:p-1">
                 <h3 className="font-bold">SEO and Performance Optimization :</h3>
                 <p> Our apps are optimized for search engines and performance, ensuring fast load times and better visibility online.</p>
               </li>
@@ -134,16 +118,16 @@ const Services = () => {
       case 'uiux':
         return (
           <>
-            <ul className="list-disc mt-4  ml-7 border-r-[1px] border-[black] border-solid">
-              <li className="p-2">
+            <ul className="list-disc mt-4  ml-7 border-r-[1px] max-[770px]:border-[0px] max-[770px]:ml-2 border-[black] border-solid">
+              <li className="p-2 max-[770px]:p-1">
                 <h3 className="font-bold">Expertise :</h3>
                 <p>Our team of professionals has extensive experience in various UI/UX design principles and practices, ensuring that your interface is intuitive and user-friendly.</p>
               </li>
-              <li className="p-2">
+              <li className="p-2 max-[770px]:p-1">
                 <h3 className="font-bold">User-Centered Design :</h3>
                 <p>We focus on creating designs that prioritize the needs and behaviors of your users, enhancing their interaction with your product.</p>
               </li>
-              <li className="p-2">
+              <li className="p-2 max-[770px]:p-1">
                 <h3 className="font-bold">Customization :</h3>
                 <p>We tailor each project to meet your unique needs, providing personalized solutions that align with your business goals and brand identity.</p>
               </li>
@@ -153,16 +137,16 @@ const Services = () => {
       default:
         return (
           <>
-            <ul className="list-disc mt-4  ml-7 border-r-[1px] border-[black] border-solid">
-              <li className="p-2">
+            <ul className="list-disc mt-4  ml-7 border-r-[1px] max-[770px]:border-[0px] max-[770px]:ml-2 border-[black] border-solid">
+              <li className="p-2 max-[770px]:p-1">
                 <h3 className="font-bold">SEO (Search Engine Optimization) :</h3>
                 <p>We specialize in SEO strategies that enhance your online visibility and organic search engine rankings, driving targeted traffic to your website or app.</p>
               </li>
-              <li className="p-2">
+              <li className="p-2 max-[770px]:p-1">
                 <h3 className="font-bold">PPC (Pay-Per-Click) Advertising :</h3>
                 <p>Our PPC experts create targeted campaigns on platforms like Google Ads and social media channels</p>
               </li>
-              <li className="p-2">
+              <li className="p-2 max-[770px]:p-1">
                 <h3 className="font-bold">Social Media Marketing :</h3>
                 <p>We develop customized social media strategies to build brand awareness, engage your audience</p>
               </li>
@@ -263,11 +247,10 @@ const Services = () => {
     <div>
       {/* Hero Section */}
       <section className="mt-6">
-        <div className="container mx-auto px-48 text-left">
-          <div className="text-center p-6 mb-4">
-            <h1 className="text-4xl font-bold">We Strive To Deliver Development Services</h1>
-            <p className="text-lg text-[#6A6A6A] mt-4" style={{
-              fontSize: "16px",
+        <div className="container mx-auto px-0 text-left">
+          <div className="text-center p-0 mb-4 max-[500px]:px-1">
+            <h1 className="text-4xl font-bold max-[500px]:text-[25px]">We Strive To Deliver Development Services</h1>
+            <p className="text-lg text-[#6A6A6A] mt-4 max-[500px]:mt-1 text-[16px] max-[500px]:text-[14px]" style={{
               fontWeight: "400",
               lineHeight: "27.52px",
               textAlign: "center",
@@ -275,7 +258,7 @@ const Services = () => {
             }}>We specialize in creating visually appealing, high-quality, and user-friendly mobile applications.</p>
           </div>
           <div className="mb-6 font-bold">
-            <ul className="flex justify-center">
+            <ul className="flex justify-center max-[500px]:hidden">
               <li className="mr-8">
                 <button onClick={() => handleServiceChange('web')} className={`hover:text-blue-700 ${selectedService === 'web' ? 'text-blue-700' : ''}`}>Web Development</button>
               </li>
@@ -291,8 +274,23 @@ const Services = () => {
             </ul>
             <hr className="mt-2 border-t-2 border-gray-400 w-2/3 mx-auto" />
           </div>
+          <div className='min-[500px]:hidden'>
+            <div className='ml-2'>
+              Choose Service: 
+              <select className='border border-gray-400 rounded p-2 ml-2' onChange={(e) => handleServiceChange(e.target.value)}>
+                <option value='web'>Web Development</option>
+                <option value='app'>App Development</option>
+                <option value='uiux'>UI/UX Development</option>
+                <option value='digital'>Digital Marketing</option>
+              </select>
+            </div>
+          </div>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-4 prose p-2 main-div mx-auto px-52">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-4 prose p-2 main-div mx-auto px-52 max-[1100px]:px-2">
+          
+        <div className="p-2 min-[500px]:hidden mt-5">
+            <img src={getHeroImage()} alt="Devices" className="mx-auto image-section h-[439px]" />
+          </div>
           <div className="p-2 ">
             {renderHomeContent()}
             <div className="mt-8">
@@ -304,21 +302,21 @@ const Services = () => {
               </Link></button>
             </div>
           </div>
-          <div className="p-2">
+          <div className="p-2 max-[500px]:hidden">
             <img src={getHeroImage()} alt="Devices" className="mx-auto image-section h-[439px]" />
           </div>
         </div>
       </section>
 
       {/* Services Section */}
-      <section className="mt-[6rem] py-14 section-service mx-8 rounded-lg">
+      <section className="mt-[6rem] py-14 section-service mx-8 rounded-lg max-[700px]:mx-2">
         <div className="container mx-auto px-2">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-4 prose p-4 bg-white shadow rounded">
             <div className="p-4 bg-white">
               <h2 className="text-3xl font-bold pl-1">We work with you for growth</h2>
               {renderServiceContent()}
             </div>
-            <div className="mt-4">
+            <div className="mt-4 max-[770px]:mt-0">
               {renderServiceRightContent()}
             </div>
           </div>
@@ -328,7 +326,9 @@ const Services = () => {
 <br/>
 <br/>
       {/* Testimonials Section */}
+      <div className='max-[505px]:mt-[-13rem] max-[705px]:mt-[-8rem]'>
             <ClientReview />
+      </div>
       {/* <section className="mt-6 py-6">
         <div className="container mx-auto flex justify-center items-center">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-[4rem] ">
