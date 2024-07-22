@@ -274,7 +274,6 @@ const PricingMain = () => {
                                                 <div className=' text-left text-[35px] max-[630px]:text-[25px] font-semibold flex float-left justify-start items-start'>
                                                     <p>
                                                         {item.heading}
-
                                                     </p>
                                                 </div>
                                                 <div className=' text-justify pt-3 pricingM-subpart3' style={{
