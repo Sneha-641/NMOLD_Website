@@ -90,4 +90,16 @@
         display: grid;
         grid-template-columns: auto;
     }
+    .card-heading-aboutus{
+        line-height: 28px;;
+        font-size: 27px;
+    }
+    
+.About-sub43 {
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 22px;
+    text-align: left;
+    color: #6A6A6A
+}
 }

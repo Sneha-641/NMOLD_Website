@@ -6,25 +6,21 @@ const HaveAQues = () => {
     return (
         <>
             <div className='flex justify-center items-center mb-[10rem]'>
-                <div className='h-[405px] flex '>
-                    <div className='h-[405px] w-[608px]'>
-                        <img src={PI} alt="" className='h-[405px] w-[608px]' />
+                <div className='h-[405px] flex  max-[780px]:flex-col max-[780px]:items-center '>
+                    <div className='h-[405px] w-[608px] max-md:justify-center max-md:items-center max-md:flex max-[600px]:w-[98%] max-[600px]:h-[auto]'>
+                        <img src={PI} alt="" className='h-[405px] w-[608px] max-[600px]:w-[98%] max-[600px]:h-[auto]' />
                     </div>
-                    <div className='px-10 py-6'>
+                    <div className='px-10 max-[600px]:px-10 py-6 max-[600px]:py-1'>
                         <div className='pricingM-right-box2 p-4'>
-                            <div className='text-[var(--theme)] text-[25px] mt-2'>
+                            <div className='text-[var(--theme)] text-[25px] mt-2 max-[630px]:text-[23px]'>
                                 Have a question?
                             </div>
-                            <div className='mt-4' style={{
-                                fontSize: "40px",
-                                fontWeight: "700",
-                                lineHeight: "64px",
-                                textAlign: "left",
-                                color: "#000000",
+                            <div className='mt-4 max-[600px]:mt-1 haveaques-head' style={{
+
                             }}>
                                 Contact Us
                             </div>
-                            <div className='' style={{
+                            <div className='haveaques-head-sub' style={{
                                 fontSize: "20px",
                                 fontWeight: "400",
                                 lineHeight: "32px",
@@ -32,12 +28,12 @@ const HaveAQues = () => {
                                 color: "#6A6A6A",
 
                             }}>
-                                We just do more than just connect with the clients, we relate to their business and try to provide them with the best possible cost-effective solution.
+                                We just do more than just connect with the clients, we relate to their business and try to provide them with the best possible and also cost-effective solution.
                             </div>
                             <div className='btn px-16 h-[57px] rounded-[8px] txet-[20px] w-[fit-content] mt-7'>
-                             <Link to="/meetingform">
-                                Schedule a Meeting
-                             </Link>
+                                <Link to="/meetingform">
+                                    Schedule a Meeting
+                                </Link>
                             </div>
                         </div>
                     </div>

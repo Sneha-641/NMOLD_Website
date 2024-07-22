@@ -16,6 +16,28 @@ import ContactUs from './ContactUs'
 import HaveAQues from './HaveAQues'
 import { Link } from 'react-router-dom'
 const AboutUs = () => {
+    const data = [
+        {
+            title: "commitment",
+            description: "We are truly committed to going above and beyond traditional working scenarios. This ensures excellent growth and maximized ROI.",
+            img: IMG3
+        },
+        {
+            title: "Ownership",
+            description: "We are truly committed to going above and beyond traditional working scenarios. This ensures excellent growth and maximized ROI.",
+            img: IMG4
+        },
+        {
+            title: "Innovation",
+            description: "We are truly committed to going above and beyond traditional working scenarios. This ensures excellent growth and maximized ROI.",
+            img: IMG5
+        },
+        {
+            title: "Transparency",
+            description: "We are truly committed to going above and beyond traditional working scenarios. This ensures excellent growth and maximized ROI.",
+            img: IMG6
+        }
+    ]
     return (
         <>
             <div className='max-sm:w-full  max-sm:flex max-sm:flex-col max-sm:max-sm:items-center max-sm:justify-center'>
@@ -151,15 +173,15 @@ const AboutUs = () => {
                             </div>
                         </div>
                     </div>
-                    {/* <div className='h-[524px] pt-[1rem] mt-[6rem]'>
-                        <div className='h-[431px] flex justify-center gap-[4.5rem] items-center'>
+                    <div className='h-[524px] pt-[1rem] mt-[6rem] max-md:mt-[8rem] max-md:flex max-md:justify-center max-md:items-center'>
+                        <div className='h-[431px] flex justify-center gap-[4.5rem] items-center max-[780px]:flex-col max-[780px]:items-center'>
 
-                            <div className='h-[431px] w-[674px]'>
-                                <img src={IMG2} alt="" />
+                            <div className='h-[431px] max-md:justify-center max-md:items-center max-md:flex w-fu;; w-[674px] max-[600px]:w-[98%] max-[600px]:h-[auto]'>
+                                <img src={IMG2} alt="" className='max-[600px]:w-[98%] max-[600px]:h-[auto]' />
                             </div>
-                            <div className='h-[411px] w-[468px]'>
+                            <div className='h-[411px] w-[468px] max-md:w-full max-md:px-3'>
 
-                                <div className='About-sub-h'>
+                                <div className='About-sub-h max-[630px]:text-[25px]'>
                                     How Company Started
                                 </div>
                                 <div className='About-sub1 mt-[1.4rem]'>
@@ -168,107 +190,40 @@ const AboutUs = () => {
                             </div>
                         </div>
 
-                    </div> */}
+                    </div>
                 </div>
-                {/* <div className='mt-[4rem]'>
-                    <div className='heading'>
+                <div className='mt-[4rem] max-md:m-[10rem]'>
+                    <div className='heading max-[630px]:text-[25px]'>
                         OUR VALUES
                     </div>
                     <div className='About-sub4'>
                         We hold our ethics, values and work culture to the highest standards and hold a professional work culture which refelts in our work.
                     </div>
-                    <div className='flex justify-center items-center gap-[1.5rem] mt-10'>
-                        <div className='w-[291px] h-[448px] About-box-border flex flex-col justify-center items-center'>
+                    <div className='flex justify-center items-center gap-[1.5rem] mt-10 animatedstats-main '>
+                        {data.map((value,index)=>(<div className='w-[291px] h-[448px] max-[600px]:h-[100%] max-[600px]:w-[260px] max-[600px]:py-4 About-box-border flex flex-col justify-center items-center'>
                             <div className='flex justify-start items-start w-[80%] mb-3'>
 
-                                <div className='h-[50px] w-[50px] text-left float-left'>
-                                    <img src={IMG3} alt="" className='float-left text-left' />
+                                <div className='h-[50px] w-[50px] max-[600px]:h-[40px] max-[600px]:w-[40px] text-left float-left'>
+                                    <img src={value.img} alt="" className='float-left text-left' />
                                 </div>
                             </div>
                             <div className='flex flex-col justify-center items-center mb-3'>
 
-                                <div className='w-[229px]' style={{
-                                    fontSize: "35px",
+                                <div className='w-[229px] text-[36px] card-heading-aboutus' style={{
                                     fontWeight: "700",
                                     lineHeight: "56px",
                                     textAlign: "left",
                                 }}>
-                                    Commitment
+                                    {value.title}
                                 </div>
-                                <div className='About-sub43 font-[400] w-[219px] text-justify'>
-                                    We are truly committed to going above and beyond traditional working scenarios. This ensures excellent growth and maximized ROI.
-                                </div>
-                            </div>
-                        </div>
-                        <div className='w-[291px] h-[448px] About-box-border flex flex-col justify-center items-center'>
-                            <div className='flex justify-start items-start w-[80%] mb-3'>
-
-                                <div className='h-[50px] w-[50px] text-left float-left'>
-                                    <img src={IMG4} alt="" className='float-left text-left' />
+                                <div className='About-sub43 card-heading-aboutus2 font-[400] w-[219px] text-justify'>
+                                    {value.description}
                                 </div>
                             </div>
-                            <div className='flex flex-col justify-center items-center mb-3'>
-
-                                <div className='w-[229px]' style={{
-                                    fontSize: "35px",
-                                    fontWeight: "700",
-                                    lineHeight: "56px",
-                                    textAlign: "left",
-                                }}>
-                                    Ownership
-                                </div>
-                                <div className='About-sub43 font-[400] w-[219px] text-justify'>
-                                    We are truly committed to going above and beyond traditional working scenarios. This ensures excellent growth and maximized ROI.
-                                </div>
-                            </div>
-                        </div>
-                        <div className='w-[291px] h-[448px] About-box-border flex flex-col justify-center items-center'>
-                            <div className='flex justify-start items-start w-[80%] mb-3'>
-
-                                <div className='h-[50px] w-[50px] text-left float-left'>
-                                    <img src={IMG5} alt="" className='float-left text-left' />
-                                </div>
-                            </div>
-                            <div className='flex flex-col justify-center items-center mb-3'>
-
-                                <div className='w-[229px]' style={{
-                                    fontSize: "35px",
-                                    fontWeight: "700",
-                                    lineHeight: "56px",
-                                    textAlign: "left",
-                                }}>
-                                    Innovation
-                                </div>
-                                <div className='About-sub43 font-[400] w-[219px] text-justify'>
-                                    We are truly committed to going above and beyond traditional working scenarios. This ensures excellent growth and maximized ROI.
-                                </div>
-                            </div>
-                        </div>
-                        <div className='w-[291px] h-[448px] About-box-border flex flex-col justify-center items-center'>
-                            <div className='flex justify-start items-start w-[80%] mb-3'>
-
-                                <div className='h-[50px] w-[50px] text-left float-left'>
-                                    <img src={IMG6} alt="" className='float-left text-left' />
-                                </div>
-                            </div>
-                            <div className='flex flex-col justify-center items-center mb-3'>
-
-                                <div className='w-[229px]' style={{
-                                    fontSize: "35px",
-                                    fontWeight: "700",
-                                    lineHeight: "56px",
-                                    textAlign: "left",
-                                }}>
-                                    Transparency
-                                </div>
-                                <div className='About-sub43 font-[400] w-[219px] text-justify'>
-                                    We are truly committed to going above and beyond traditional working scenarios. This ensures excellent growth and maximized ROI.
-                                </div>
-                            </div>
-                        </div>
+                        </div>))}
                     </div>
-                </div> */}
-                {/* <div className='mt-[6rem]'>
+                </div>
+                <div className='mt-[6rem]'>
                     <div className='heading'>
                         The Founding Member NMOLD
                     </div>
@@ -319,7 +274,7 @@ const AboutUs = () => {
                 </div>
                 <div className='mt-[6rem]'>
                     <HaveAQues />
-                </div> */}
+                </div>
             </div>
         </>
     )
