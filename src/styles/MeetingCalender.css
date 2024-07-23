@@ -214,7 +214,6 @@
     line-height: 16px;
     font: inherit;
     font-size: 18px;
-
   }
   
   .react-calendar__tile:disabled {
@@ -277,4 +276,19 @@
   .cal-par-box{
     box-shadow: 0 4px 2px 0px rgba(0,0,0,0.25);
     width:cover;
+  }
+  @media (max-width:560px){
+    .react-calendar{
+      width:90%;
+    padding:1rem 1rem;
+    }
+  .react-calendar__tile {
+    max-width: 100%;
+    padding: 14px 1.6667px; 
+    background: none;
+    text-align: center;
+    line-height: 15px;
+    font: inherit;
+    font-size: 15px;
+  }
   }

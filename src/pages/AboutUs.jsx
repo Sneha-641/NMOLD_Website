@@ -121,7 +121,7 @@ const AboutUs = () => {
                                             fontWeight: 500,
                                             textAlign: "center",
                                         }}
-                                    /> <span className='text-[var(--theme)]'>years</span>
+                                    /> <span className='text-[var(--theme)]'>&nbsp; years</span>
                                 </div>
                                 <div className='About-sub-56'>
                                     Founded sice 2022

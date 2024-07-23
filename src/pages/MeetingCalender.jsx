@@ -6,7 +6,7 @@ import "../styles/MeetingCalender.css"
 import emailjs from '@emailjs/browser';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-import {messages} from '../helper/Messages';
+import { messages } from '../helper/Messages';
 const MeetingCalender = () => {
 
     const dates = ["9:00 AM", "9:30 AM", "10:00 AM", "10:30 AM", "11:00 AM", "11:30 AM", "12:00 AM", "12:30 PM", "1:00 PM", "1:30 PM", "2:00 PM", "2:30 PM", "3:00 PM", "3:30 PM", "4:00 PM", "4:30 PM", "5:00 PM", "5:30 PM", "6:00 PM"]
@@ -38,7 +38,7 @@ const MeetingCalender = () => {
     }
 
     const handleSubmit = async () => {
-        if (state.firstName == "" || state.lastName == "" || state.phone == "" || state.email == "" || state.company == "") {
+        if (state.firstName === "" || state.lastName == "" || state.phone === "" || state.email == "" || state.company === "") {
             notify(2);
             return;
         }
@@ -77,10 +77,9 @@ const MeetingCalender = () => {
             </div>
             <div className='w-full flex justify-center items-center mt-[2rem] mb-[3rem]'>
 
-                <div className='flex justify-evenly cal-par-box'>
-
-                    <div className='bg-[#494E7F] pb-[3rem] px-4 flex justify-center flex-col items-center'>
-                        <div className='text-[35px] text-white justify-center align-middle pb-8  text-center font-semibold'>
+                <div className='flex justify-evenly cal-par-box max-[560px]:w-full max-[560px]:overflow-x-hidden'>
+                    <div className='bg-[#494E7F] pb-[3rem] px-4 max-[560px]:pl-[6%] flex justify-center flex-col items-center'>
+                        <div className='text-[35px] max-[560px]:text-[27px] max-[560px]:mt-2 text-white justify-center align-middle pb-8  text-center font-semibold'>
                             <div className=''>
                                 NMOLD
                             </div>
@@ -90,7 +89,7 @@ const MeetingCalender = () => {
                             <Calendar onChange={setDate} value={date} />
                         </div>
                     </div>
-                    <div className='h-full font-semibold px-[3rem] text-center'>
+                    <div className=' max-[1000px]:hidden h-full font-semibold px-[3rem] text-center'>
                         <div className='text-[2rem]'>
                             Meeting Timings
                         </div>
@@ -123,7 +122,6 @@ const MeetingCalender = () => {
                         </div>
                         <div className='text-left'>
                             Selected time: <span className='text-[var(--theme)] '>
-
                                 {date.toDateString()}
                             </span>
                         </div>
@@ -145,6 +143,51 @@ const MeetingCalender = () => {
                             )}
                         </div>
                     </div>
+                </div>
+            </div>
+            <div className='min-[1000px]:hidden w-[fit-content] text-[2rem] max-[1000px]:text-[1.5rem] max-[790px]:text-[1.3rem] font-semibold ml-[2%] mb-[10px]'>
+                Select Meeting Timimgs:
+            </div>
+            <div className='min-[1000px]:hidden mx-6 flex relative flex-row gap-3 max-h-[10rem] overflow-x-scroll justify-center items-center '>
+                {dates.map((item, index) => {
+                    return (
+                        <div className={`h-[3rem] min-w-[20%] pt-2 cursor-pointer px-[0rem] py-[0.0rem] text-center text-[20px] border-[var(--theme)] border-[1px] ${selected === index ? 'bg-[var(--theme)] text-white' : ""}`} onClick={
+                            () => {
+                                setSelected(index)
+                            }
+                        }>
+                            {item}
+                        </div>
+                    )
+                }
+                )}
+            </div>
+            <div className=' min-[1000px]:hidden ml-[2%] flex items-baseline gap-4 justify-start '>
+                <div className='min-w-[10rem] w-[fit-content] text-[2rem] max-[1000px]:text-[1.5rem] max-[790px]:text-[1.3rem]'>
+                    Meeting Duration:
+                </div>
+                <div className=' mt-2 gap-2 flex w-[fit-content] justify-evenly items-center '>
+                    <div className={` mt-4 py-2 cursor-pointer h-[3rem] min-w-[20%] pt-2 px-[0rem] text-center text-[20px] ${duration === "30 minutes" ? "btn" : "border border-black rounded-md border-sm"} px-2 w-[100px] cursor-pointer`} onClick={() => {
+                        setDuration("30 minutes")
+                    }}>
+                        30 min
+                    </div>
+                    <div className={` mt-4 py-2 cursor-pointer h-[3rem] min-w-[20%] pt-2 px-[0rem] text-center text-[20px]border-xl border-black border rounded-md py-1 w-[100px] ${duration === "1 hour" ? "btn" : ""} cursor-pointer`} onClick={() => {
+                        setDuration("1 hour")
+                    }}>
+                        1 hr
+                    </div>
+                </div>
+            </div>
+            <div className=' min-[1000px]:hidden text-center mt-[1rem]'>
+
+                <div className='text-center'>
+                    Selected time: <span className='text-[var(--theme)] '>
+                        {date.toDateString()}
+                    </span>
+                </div>
+                <div className='text-[var(--theme)] mb-6 text-center'>
+                    UTC +5:30 India Standard Time
                 </div>
             </div>
             {duration != "302 minutes" && selected != -1 && <div className={``}>

@@ -82,8 +82,8 @@ const ContactUs = () => {
                             We believe that the success of our company is a result of our clients growth.
                         </div>
                     </div>
-                    <div className='  mt-[5rem] flex gap-10 max-[1100px]:gap-5 max-[1100px]:px-[1%] bg-white max-[950px]:flex-col max-[950px]:w-[100%]'>
-                        <div className='bg-[#4F45EB] text-[var(--bgc)] h-[647px]  w-[491px] radius contact-us-sub-left max-[1100px]:w-[40%] max-[1000px]:w-[50%] max-[950px]:w-[95%] max-[950px]:h-[50vh] max-[950px]:ml-[1px]  '>
+                    <div className='h-full mt-[5rem] max-[850px]:mt-[1rem] flex gap-10 max-[1100px]:gap-5 max-[1100px]:px-[1%] bg-white max-[950px]:flex-col max-[950px]:w-[100%]'>
+                        <div className='bg-[#4F45EB] text-[var(--bgc)] h-[647px]  w-[491px] radius contact-us-sub-left max-[1100px]:w[40%] max-[1000px]:w[50%] max-[950px]:w[95%] max-[950px]:h-[fit-content]  max-[950px]:ml-[1px] w-full '>
                             <div className='pt-10'>
                                 <div className='ml-10' style={{
                                     fontSize: "28px",
@@ -101,7 +101,7 @@ const ContactUs = () => {
                                 }}>
                                     Say something to start a live chat!
                                 </div>
-                                <div className='mt-[7.5rem] pl-[2rem] max-[950px]:mt-4 flex  w-[40%] gap-3 max-[420px]:w-full textsm '>
+                                <div className='mt-[7.5rem] pl-[2rem] max-[950px]:mt-4 flex w-[40%] gap-3 max-[420px]:w-full  textsm '>
                                     <div className='max-[420px]:hidden'>
                                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
                                             <path d="M20 10.999H22C22 5.869 18.127 2 12.99 2V4C17.052 4 20 6.943 20 10.999Z" fill="#F7F6FF" />
@@ -156,8 +156,8 @@ const ContactUs = () => {
                                         132 Dartmouth Street Boston, Massachusetts 02156 United States
                                     </div>
                                 </div>
-                                <div className='max-[950px]:mt-[7rem]'>
-                                    <div className='flex absolute max-[950px]:relative  bottom-16 max-[950px]:justify-start  gap-2 left-5 justify-center items-center'>
+                                <div className='max-[950px]:mt-[7rem] '>
+                                    <div className='flex absolute max-[950px]:relative  bottom-16 max-[950px]:justify-start  gap-2 left-5 justify-center items-center max-[920px]:w-[90%]'>
                                         <div className=' p-1 rounded-full cursor-pointer hover:text-black'>
                                             <svg fill="white" width="30px" height="30px" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" stroke="#0055ff"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <title></title> <g id="Linkedln"> <path d="M26.49,30H5.5A3.35,3.35,0,0,1,3,29a3.35,3.35,0,0,1-1-2.48V5.5A3.35,3.35,0,0,1,3,3,3.35,3.35,0,0,1,5.5,2h21A3.35,3.35,0,0,1,29,3,3.35,3.35,0,0,1,30,5.5v21A3.52,3.52,0,0,1,26.49,30ZM9.11,11.39a2.22,2.22,0,0,0,1.6-.58,1.83,1.83,0,0,0,.6-1.38A2.09,2.09,0,0,0,10.68,8a2.14,2.14,0,0,0-1.51-.55A2.3,2.3,0,0,0,7.57,8,1.87,1.87,0,0,0,7,9.43a1.88,1.88,0,0,0,.57,1.38A2.1,2.1,0,0,0,9.11,11.39ZM11,13H7.19V24.54H11Zm13.85,4.94a5.49,5.49,0,0,0-1.24-4,4.22,4.22,0,0,0-3.15-1.27,3.44,3.44,0,0,0-2.34.66A6,6,0,0,0,17,14.64V13H13.19V24.54H17V17.59a.83.83,0,0,1,.1-.43,2.73,2.73,0,0,1,.7-1,1.81,1.81,0,0,1,1.28-.44,1.59,1.59,0,0,1,1.49.75,3.68,3.68,0,0,1,.44,1.9v6.15h3.85ZM17,14.7a.05.05,0,0,1,.06-.06v.06Z"></path> </g> </g></svg>
                                         </div>
@@ -177,8 +177,8 @@ const ContactUs = () => {
                                 </div>
                             </div>
                         </div>
-                        <form ref={form} className='max-[950px]:mt-[8rem]'>
-                            <div className='w-[611px] max-[1100px]:w-[60%] max-[1100px]:w-[50%] flex flex-col gap-10 h-[647px] mt-10 max-[950px]:mt-0 relative max-[950px]:justify-center bg-refd-500 items-center max-[420px]:items-start max-[950px]:w-full max-[950px]:p-10'>
+                        <form ref={form} className='max-[950px]:mt-[1rem]'>
+                            <div className='w-[611px] max-[1100px]:w-[60%] max-[1100px]:w-[50%] flex flex-col gap-10 h-[647px] max-[1000px]:h-full mt-10 max-[950px]:mt-0 relative max-[950px]:justify-center bg-refd-500 items-center max-[420px]:items-start max-[950px]:w-full max-[950px]:p-10'>
                                 <div className='flex gap-[2rem] contact-part1 max-[950px]:flex-col  '>
                                     <div className='flex flex-col w-[278px]'>
                                         <label>
@@ -344,8 +344,8 @@ const ContactUs = () => {
                                         </div>
                                     </div>
                                 </div>
-                                <div className='flex justify-end items-end max-[900px]:items-start max-[900px]:justify-start w-[95%]'>
-                                    <div className='btn h-[54px] w-[214px] cursor-pointer'
+                                <div className=' flex justify-end items-end max-[900px]:items-start max-[900px]:justify-start w-[95%]'>
+                                    <div className='btn h-[54px] w-[214px] max-[1000px]:h-[33px] cursor-pointer'
                                         onClick={
                                             () => {
                                                 handlesubmit();

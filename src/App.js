@@ -38,8 +38,8 @@ function App() {
         <Route path="/privacy" element={<PrivacyPolicy />} />
         <Route path="/termsandconditions" element={<TermsOfUse />} />
       </Routes>
-      {/* <Footer state={state} setState={setState}/> */}
-      {/* <CopyrightBanner /> */}
+      <Footer state={state} setState={setState}/>
+      <CopyrightBanner />
     </>
   );
 }
