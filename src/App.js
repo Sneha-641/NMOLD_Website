@@ -26,7 +26,7 @@ function App() {
   const [state,setState]=React.useState(0);
   return (
     <>
-      {/* <Navbar state={state} setState={setState}  /> */}
+      <Navbar state={state} setState={setState}  />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/contactus" element={<ContactUs />} />
