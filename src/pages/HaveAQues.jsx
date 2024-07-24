@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom'
 const HaveAQues = () => {
     return (
         <>
-            <div className='flex justify-center items-center mb-[10rem]'>
+            <div className='flex justify-center items-center mb-[10rem] max-[500px]:mb-[17rem] max-[780px]:mb-[22rem]'>
                 <div className='h-[405px] flex  max-[780px]:flex-col max-[780px]:items-center '>
                     <div className='h-[405px] w-[608px] max-md:justify-center max-md:items-center max-md:flex max-[600px]:w-[98%] max-[600px]:h-[auto]'>
                         <img src={PI} alt="" className='h-[405px] w-[608px] max-[600px]:w-[98%] max-[600px]:h-[auto]' />

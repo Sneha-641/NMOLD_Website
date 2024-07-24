@@ -23,7 +23,6 @@ const ClientReview = () => {
         setsec((sec+1)%2);
     }
     React.useEffect(() => {
-        console.log(sec);
         setTimeout(func, 2800);
     }, [sec])
     return (

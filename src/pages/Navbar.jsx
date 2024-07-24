@@ -4,14 +4,14 @@ import "../styles/Navbar.css"
 import X from "../assets/Xlogo.png"
 import { Link } from 'react-router-dom'
 const Navbar = ({ state, setState,setshow, show }) => {
-    console.log(window.location.pathname);
+    // (window.location.pathname);console.log
     const [loc, changeloc] = React.useState("/")
     React.useEffect(() => {
         changeloc(window.location.pathname); if (loc === "/") setState(0);
         if (loc === "/aboutus") setState(1);
         if (loc === "/ourservices") setState(2);
         if (loc === "/pricing") setState(3);
-        if (loc === "/contactus") setState(4); console.log(window.location.pathname)
+        if (loc === "/contactus") setState(4);
     }, [loc])
     return (
         <>

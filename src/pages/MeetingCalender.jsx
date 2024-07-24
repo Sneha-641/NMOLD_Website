@@ -148,10 +148,10 @@ const MeetingCalender = () => {
             <div className='min-[1000px]:hidden w-[fit-content] text-[2rem] max-[1000px]:text-[1.5rem] max-[790px]:text-[1.3rem] font-semibold ml-[2%] mb-[10px]'>
                 Select Meeting Timimgs:
             </div>
-            <div className='min-[1000px]:hidden mx-6 flex relative flex-row gap-3 max-h-[10rem] overflow-x-scroll justify-center items-center '>
+            <div className=' min-[1000px]:hidden overflow-y-hidden max-[500px] mx-6 flex relative flex-row gap-3 max-h-[10rem] overflow-x-scroll items-center '>
                 {dates.map((item, index) => {
                     return (
-                        <div className={`h-[3rem] min-w-[20%] pt-2 cursor-pointer px-[0rem] py-[0.0rem] text-center text-[20px] border-[var(--theme)] border-[1px] ${selected === index ? 'bg-[var(--theme)] text-white' : ""}`} onClick={
+                        <div className={`h-[3rem] max-[500px]:text-[15px] max-[500px]:h-[2rem] max-[500px]:pt-1 min-w-[20%] pt-2 cursor-pointer px-[0rem] py-[0.0rem] text-center text-[20px] border-[var(--theme)] border-[1px] ${selected === index ? 'bg-[var(--theme)] text-white' : ""}`} onClick={
                             () => {
                                 setSelected(index)
                             }
@@ -167,12 +167,12 @@ const MeetingCalender = () => {
                     Meeting Duration:
                 </div>
                 <div className=' mt-2 gap-2 flex w-[fit-content] justify-evenly items-center '>
-                    <div className={` mt-4 py-2 cursor-pointer h-[3rem] min-w-[20%] pt-2 px-[0rem] text-center text-[20px] ${duration === "30 minutes" ? "btn" : "border border-black rounded-md border-sm"} px-2 w-[100px] cursor-pointer`} onClick={() => {
+                    <div className={` mt-4 py-2 max-[500px]:h-[fit-content] max-[500px]:text-[17px] max-[500px]:py-1 cursor-pointer h-[3rem] min-w-[20%] pt-2 px-[0rem] text-center text-[20px] ${duration === "30 minutes" ? "btn" : "border border-black rounded-md border-sm"} px-2 w-[100px] cursor-pointer`} onClick={() => {
                         setDuration("30 minutes")
                     }}>
                         30 min
                     </div>
-                    <div className={` mt-4 py-2 cursor-pointer h-[3rem] min-w-[20%] pt-2 px-[0rem] text-center text-[20px]border-xl border-black border rounded-md py-1 w-[100px] ${duration === "1 hour" ? "btn" : ""} cursor-pointer`} onClick={() => {
+                    <div className={` mt-4 py-2 max-[500px]:h-[fit-content] max-[500px]:text-[17px] max-[500px]:py-1  cursor-pointer h-[3rem] min-w-[20%] pt-2 px-[0rem] text-center text-[20px]border-xl border-black border rounded-md py-1 w-[100px] ${duration === "1 hour" ? "btn" : ""} cursor-pointer`} onClick={() => {
                         setDuration("1 hour")
                     }}>
                         1 hr
@@ -188,6 +188,21 @@ const MeetingCalender = () => {
                 </div>
                 <div className='text-[var(--theme)] mb-6 text-center'>
                     UTC +5:30 India Standard Time
+                </div>
+                <div className='flex w-full justify-center items-center mb-[4rem]'>
+
+                    <div className='btn mt-4 py-2 cursor-pointer ' onClick={
+                        () => {
+                            if (selected === -1) {
+                                alert("Please select a time slot && duration")
+                                return
+                            }
+                            // scroll down
+                            document.querySelector('.form-schedule-main-box').scrollIntoView({ behavior: 'smooth' });
+                        }
+                    }>
+                        Continue -&gt;
+                    </div>
                 </div>
             </div>
             {duration != "302 minutes" && selected != -1 && <div className={``}>

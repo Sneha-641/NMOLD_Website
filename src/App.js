@@ -19,13 +19,11 @@ import { Routes, BrowserRouter, Route } from 'react-router-dom';
 import AboutUs from './pages/AboutUs';
 import TermsOfUse from './pages/TermsOfUse';
 import PrivacyPolicy from './pages/PrivacyPolicy';
-import MeetingCalender from './pages/MeetingCalender';
 import React from 'react';
 // https://www.figma.com/design/OWcieRQi0UaZrbx5sQM9jJ/NMOLD?node-id=0-1&t=Fz6quNMjalRuuomr-0
 function App() {
   const [state,setState]=React.useState(0);
   const [show,setshow]=React.useState(false);
-  React.useEffect(()=>{console.log(show)},[show])
   return (
     <>
       <Navbar state={state} setState={setState} setshow={setshow} show={show}  />

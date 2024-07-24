@@ -36,7 +36,7 @@ const ContactUs = () => {
 
     const handlesubmit = async () => {
         try {
-            console.log(messages)
+            // console.log(messages)
             if (state.firstName === "" || state.lastName === "" || state.email === "" || state.phoneNumber === "" || state.subject === "" || state.cname === "", state.clocation === "" || state.services === "") {
                 notify(2);
                 return;

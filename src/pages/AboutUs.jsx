@@ -223,7 +223,7 @@ const AboutUs = () => {
                         </div>))}
                     </div>
                 </div>
-                <div className='mt-[6rem]'>
+                <div className='mt-[6rem] max-[640px]:mt-[-5rem]'>
                     <div className='heading'>
                         The Founding Member NMOLD
                     </div>
