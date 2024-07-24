@@ -24,9 +24,12 @@ import React from 'react';
 // https://www.figma.com/design/OWcieRQi0UaZrbx5sQM9jJ/NMOLD?node-id=0-1&t=Fz6quNMjalRuuomr-0
 function App() {
   const [state,setState]=React.useState(0);
+  const [show,setshow]=React.useState(false);
+  React.useEffect(()=>{console.log(show)},[show])
   return (
     <>
-      <Navbar state={state} setState={setState}  />
+      <Navbar state={state} setState={setState} setshow={setshow} show={show}  />
+      <div className={`${show?"h-[90vh] overflow-hidden ":""}`}>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/contactus" element={<ContactUs />} />
@@ -40,6 +43,7 @@ function App() {
       </Routes>
       <Footer state={state} setState={setState}/>
       <CopyrightBanner />
+      </div>
     </>
   );
 }

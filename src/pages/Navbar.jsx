@@ -3,8 +3,7 @@ import Logo from '../assets/Logo.png'
 import "../styles/Navbar.css"
 import X from "../assets/Xlogo.png"
 import { Link } from 'react-router-dom'
-const Navbar = ({ state, setState }) => {
-    const [show, setshow] = React.useState(false);
+const Navbar = ({ state, setState,setshow, show }) => {
     console.log(window.location.pathname);
     const [loc, changeloc] = React.useState("/")
     React.useEffect(() => {
@@ -16,7 +15,7 @@ const Navbar = ({ state, setState }) => {
     }, [loc])
     return (
         <>
-            <div className={`${show ? "" : "hidden"} z-[99999999] absolute h-full w-[100vw] navbar-back`}>
+            <div className={`${show ? "" : "hidden"} z-[99999999] absolute h-full w-[100vw] navbar-back`} onClick={()=>{setshow(false)}}>
 
             </div>
             <div className='z-[999999999] w-full h-[74px] flex justify-evenly max-[640px]:relative items-center '>
