@@ -3,11 +3,11 @@ import "../styles/PrivacyPolicy.css"
 const TermsOfUse = () => {
     return (
         <>
-            <div className='m-[4rem] text-justify'>
+            <div className=' min-[670px]:m-[4rem] text-justify max-[670px]:text-left max-[670px]:m-[2rem] '>
                 <div className='bold text-[35px] text-center'>
                     Terms of Use
                 </div>
-                <div className='text-justify mt-10'>
+                <div className='text-justify max-[670px]:text-left mt-10'>
                     These Terms of Use (“Terms”) apply to all Starter, Bronze, Silver, and Gold users of the Nmold form-building platform (“Platform”) and visitors to the Nmold website (“Website”) at www.nmold.com. By using the Platform or Website, you agree to these Terms.
 
                 </div>

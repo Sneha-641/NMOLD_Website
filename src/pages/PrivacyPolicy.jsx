@@ -3,13 +3,13 @@ import "../styles/PrivacyPolicy.css"
 const PrivacyPolicy = () => {
     return (
         <>
-            <div className='m-[4rem]'>
+            <div className='min-[670px]:m-[4rem] text-justify max-[670px]:text-left max-[670px]:m-[2rem]'>
                 <div className='bold text-[35px] text-center'>
                     Privacy Policy
                 </div>
                 <div className='text-justify mt-10'>
                     This privacy policy explains how Nmold Pvt Ltd handles your personal information and data. It applies to all products, services, and websites offered by Nmold Pvt Ltd and their affiliates, collectively referred to as "services."
-                    <div className=' font-bold text-[36px] mt-10 '>
+                    <div className=' font-bold text-[36px] mt-10 max-[670px]:text-[28px] max-[670px]:text-left max-[670px]:font-semibold max-[670px]:mt-6 '>
                         INFORMATION WE COLLECT
                     </div>
                     <div className=''>
@@ -77,7 +77,7 @@ const PrivacyPolicy = () => {
                                 </div>
                                 Form Responses: Data submitted in forms, stored on behalf of customers. Form creators manage this data and may have their own privacy policies.
                             </div>
-                            <div className='font-semibold text-[25px] mt-10'>
+                            <div className='font-semibold  text-[25px] mt-10 max-[670px]:text-[24px] max-[670px]:text-left max-[670px]:font-semibold max-[670px]:mt-6'>
 
                                 HOW WE USE AND DISCLOSE YOUR INFORMATION
 
@@ -140,7 +140,7 @@ const PrivacyPolicy = () => {
 
                     </div>
                 </div>
-                <div className=' font-bold text-[27px] mt-10 '>
+                <div className=' font-bold text-[27px] mt-10 max-[670px]:text-[28px] max-[670px]:text-left max-[670px]:font-semibold max-[670px]:mt-6'>
                     Nmold Pvt Ltd prioritizes data security and follows industry standards to protect your information.
                 </div>
             </div>

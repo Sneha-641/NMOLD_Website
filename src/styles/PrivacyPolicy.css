@@ -4,3 +4,11 @@
     color:rgb(52, 52, 52);
     margin-top: 1rem;
 }
+@media (max-width:670px){
+    .privacy-sub{
+        font-weight: 600;
+        font-size: 20px;
+        color:rgb(52, 52, 52);
+        margin-top: 1rem;
+    }
+}

@@ -89,7 +89,7 @@ export const Footer = ({ state, setState }) => {
                                 <div className='text-[#444444] mb-3 cursor-pointer text-[14px] hover:text-[var(--theme)]' style={{ fontWeight: "400", fontSize: "14px", lineHeight: "22.4px" }}>Knowledge</div>
                                 <div className='text-[#444444] mb-3 cursor-pointer text-[14px] hover:text-[var(--theme)]' style={{ fontWeight: "400", fontSize: "14px", lineHeight: "22.4px" }}>
                                     <Link to="/termsandconditions">
-                                        Terms and
+                                        Terms and Conditions
                                     </Link>
                                 </div>
                                 <div className='text-[#444444] mb-3 cursor-pointer text-[14px] hover:text-[var(--theme)]' style={{ fontWeight: "400", fontSize: "14px", lineHeight: "22.4px" }} onClick={() => { setState(-1) }}><Link to="/privacy">
