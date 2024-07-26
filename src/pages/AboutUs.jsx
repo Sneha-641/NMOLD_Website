@@ -71,7 +71,6 @@ const AboutUs = () => {
                             <img src={IMG1} alt="" className='max-[600px]:w-[98%] max-[600px]:h-[auto]' />
                         </div>
                     </div>
-
                 </div>
                 <div className='px-2 min-[780px]:hidden'>
                     <div className='max-[600px]:w-[98%] max-[600px]:h-[auto] min-[780px]:hidden'>
@@ -100,9 +99,9 @@ const AboutUs = () => {
                     </div>
                 </div>
 
-                <div className=' max-[780px]:mt-[8rem] max-[630px]:mt-[1rem] '>
+                <div className=' max-[780px]:mt-[0rem] max-[630px]:mt-[0rem] max-[513px]:mt-[-4rem] '>
 
-                    <div className='heading text-center mt-[6rem] min-[521px]:mt-0 min-[640px]:mt-[12rem] min-[780px]:mt-[1rem] min-[976px]:mt-[6rem] min-[630px]:mt-[6rem] max-[630px]:text-[25px]'>
+                    <div className='heading text-center mt-[6rem]  min-[521px]:mt-0 min-[640px]:mt-[1rem] min-[780px]:mt-[1rem] min-[976px]:mt-[6rem] min-[630px]:mt-[6rem] max-[630px]:text-[25px]'>
                         Some Facts About Us
                     </div>
                     <div className='About-sub4 text-[10px]'>
