@@ -41,7 +41,7 @@ const AboutUs = () => {
     return (
         <>
             <div className='max-sm:w-full  max-sm:flex max-sm:flex-col max-sm:max-sm:items-center max-sm:justify-center'>
-                <div className=' max-[780px]:items-center h-[524px] max-[780px]:h-[100vh] max-[520px]:h-[70vh] pt-[5rem] max-[981px]:pt-1 max-[1100px]:w-[90%]  max-[860px]:w-[97%]'>
+                <div className='max-[779px]:hidden max-[780px]:items-center h-[524px] max-[780px]:h-[100vh] max-[520px]:h-[70vh] pt-[5rem] max-[981px]:pt-1 max-[1100px]:w-[90%]  max-[860px]:w-[97%]'>
                     <div className='h-[431px] flex justify-around items-center max-[780px]:flex-col max-[780px]:items-center'>
                         <div className='h-[431px] w-[674px] max-[600px]:w-[98%] max-[600px]:h-[auto] min-[780px]:hidden'>
                             <img src={IMG1} alt="" className='max-[600px]:w-[98%] max-[600px]:h-[auto]' />
@@ -73,8 +73,34 @@ const AboutUs = () => {
                     </div>
 
                 </div>
+                <div className='px-2 min-[780px]:hidden'>
+                    <div className='max-[600px]:w-[98%] max-[600px]:h-[auto] min-[780px]:hidden'>
+                        <img src={IMG1} alt="" className='max-[600px]:w-[98%] max-[600px]:h-[auto]' />
+                    </div>
+                    <div className=''>
+                        <div className='About-sub-h max-[630px]:text-[25px]'>
+                            The Story of NMOLD
+                        </div>
+                        <div className='min-[630px]:About-sub1 mt-[1.4rem] pricingM-subpart3'>
+                            A revolutionary non-traditional marketing firm which operates on a simple principle, Result-oriented campaigns. We solve real-life business problems that traditional agencies cannot.
+                        </div>
+                        <div className='flex gap-10 mt-[3rem]'>
+                            <div className='btn radius px-[16px] rounded-[8px] h-[43px] w-[fit-content] flex'>
+                                <Link to="/ourservices">
+                                    Explore our Services
+                                </Link>
+                            </div>
+                            <div className='text-[var(--theme)] border-[var(--theme)] border-[1px] radius px-[16px] rounded-[8px] h-[43px] w-[fit-content] flex justify-center items-center'>
+                                <Link to="/contactus"
+                                >
+                                    Contact Us
+                                </Link>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-                <div className=' max-[780px]:mt-[8rem] max-[630px]:mt-[-2rem] '>
+                <div className=' max-[780px]:mt-[8rem] max-[630px]:mt-[1rem] '>
 
                     <div className='heading text-center mt-[6rem] min-[521px]:mt-0 min-[640px]:mt-[12rem] min-[780px]:mt-[1rem] min-[976px]:mt-[6rem] min-[630px]:mt-[6rem] max-[630px]:text-[25px]'>
                         Some Facts About Us
@@ -201,7 +227,7 @@ const AboutUs = () => {
                         We hold our ethics, values and work culture to the highest standards and hold a professional work culture which refelts in our work.
                     </div>
                     <div className='flex justify-center items-center gap-[1.5rem] max-[1236px]:gap-[0.4rem] max-[900px]:gap-[1.5rem] mt-10 animatedstats-main '>
-                        {data.map((value,index)=>(<div className='w-[291px] max-[1236px]:w-[291px] h-[448px] max-[600px]:h-[100%] max-[600px]:w-[260px] max-[600px]:py-4 About-box-border flex flex-col justify-center items-center'>
+                        {data.map((value, index) => (<div className='w-[291px] max-[1236px]:w-[291px] h-[448px] max-[600px]:h-[100%] max-[600px]:w-[260px] max-[600px]:py-4 About-box-border flex flex-col justify-center items-center'>
                             <div className='flex justify-start items-start w-[80%] mb-3'>
 
                                 <div className='h-[50px] w-[50px] max-[600px]:h-[40px] max-[600px]:w-[40px] text-left float-left'>
