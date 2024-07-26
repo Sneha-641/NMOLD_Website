@@ -33,9 +33,13 @@ const Navbar = ({ state, setState,setshow, show }) => {
                     <div className={`absolute h-[100vh] ${show ? "nav-side-main-sub1" : "nav-side-main-sub2"} w-[300px] bg-white border-[var(--theme)] border-[2px] mt-[-1.1rem] float-right right-0`}>
                         {/* Side Nav Bar */}
                         <div className='max-[640px]'>
-                        fcd <br/>
-                        fcd <br/>
-                        fcd <br/>
+                        <div className='mt-2'>
+                        <div className='px-[12px] max-[415px]:px-6px nav-side-contact py-[9px] mt-2 cursor cursor-pointer' onClick={() => {
+                                        // add calling function
+                                        window.location.href = 'tel:+919876543210';
+
+                                    }}><span className='max-[515px]:hidden'>Tel No. : </span>+919876543210</div>
+                        </div>
                             <div className='flex flex-col gap-[10px] mt-[3rem] pll-4'>
                                 <div className={`float-right ${show ? "" : "hidden"} absolute right-2  top-2`} onClick={
                                     () => {
