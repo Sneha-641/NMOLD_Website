@@ -33,6 +33,9 @@ const Navbar = ({ state, setState,setshow, show }) => {
                     <div className={`absolute h-[100vh] ${show ? "nav-side-main-sub1" : "nav-side-main-sub2"} w-[300px] bg-white border-[var(--theme)] border-[2px] mt-[-1.1rem] float-right right-0`}>
                         {/* Side Nav Bar */}
                         <div className='max-[640px]'>
+                        fcd <br/>
+                        fcd <br/>
+                        fcd <br/>
                             <div className='flex flex-col gap-[10px] mt-[3rem] pll-4'>
                                 <div className={`float-right ${show ? "" : "hidden"} absolute right-2  top-2`} onClick={
                                     () => {
@@ -59,7 +62,7 @@ const Navbar = ({ state, setState,setshow, show }) => {
                                         Contact
                                     </Link></div>
                                 </div>
-                                <div className='mt-4 flex gap-4 flex-col justify-center items-center'>
+                                {/* <div className='mt-4 flex gap-4 flex-col justify-center items-center'>
                                     <div className='px-[12px] nav-side-contact py-[9px] gap-[10px] cursor cursor-pointer' onClick={() => {
                                         // add calling function
                                         window.location.href = 'tel:+919876543210';
@@ -93,7 +96,7 @@ const Navbar = ({ state, setState,setshow, show }) => {
                                         </div>
                                     </div>
                                 </div>
-                                </div>
+                                </div> */}
                             </div>
                         </div>
                     </div>

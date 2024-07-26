@@ -121,7 +121,11 @@
     background-color: var(--theme);
     color:white;
   }
-  @media (max-width:1100px){
+  @media (max-width:600px){
+    
+  }
+
+    @media (max-width:1100px){
     .pricing-plans{
       display: grid;
       grid-template-columns: auto auto auto;
@@ -167,6 +171,10 @@
     }
     .pricing-container{
       padding:0;
+    }
+    .pricing-item4{
+      grid-column: 1/1;
+      grid-row:4/5;
     }
   }
   
