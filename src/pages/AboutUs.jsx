@@ -41,7 +41,7 @@ const AboutUs = () => {
     return (
         <>
             <div className='max-sm:w-full  max-sm:flex max-sm:flex-col max-sm:max-sm:items-center max-sm:justify-center'>
-                <div className=' max-[780px]:items-center h-[524px] max-[780px]:h-[100vh] max-[520px]:h-[70vh] pt-[5rem] max-[1100px]:w-[90%]  max-[860px]:w-[97%]'>
+                <div className=' max-[780px]:items-center h-[524px] max-[780px]:h-[100vh] max-[520px]:h-[70vh] pt-[5rem] max-[981px]:pt-1 max-[1100px]:w-[90%]  max-[860px]:w-[97%]'>
                     <div className='h-[431px] flex justify-around items-center max-[780px]:flex-col max-[780px]:items-center'>
                         <div className='h-[431px] w-[674px] max-[600px]:w-[98%] max-[600px]:h-[auto] min-[780px]:hidden'>
                             <img src={IMG1} alt="" className='max-[600px]:w-[98%] max-[600px]:h-[auto]' />
