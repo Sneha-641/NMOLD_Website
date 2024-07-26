@@ -14,7 +14,7 @@ const Home = () => {
     <>
       <div className=''>
         <div className='h-[620px]'>
-          <div className='w-full text-center justify-center m-auto flex mt-[8px]'>
+          <div className='hidden w-full text-center justify-center m-auto flex mt-[8px]'>
             <div className='flex justify-center items-center h-[76px] w-[637px] max-[640px]:w-[95%] max-[640px]-flex max-[640px]:justify-center max-[640px]:items-center px-[24px] bg-white home-search-main radius smtext max-[640px]:h-[3rem]'>
               <input
                 className='w-[80%]'

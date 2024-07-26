@@ -121,6 +121,15 @@
     color: #6A6A6A;
 
 }
+@media (max-width:1156px){
+    .pricingM-right-box2 {
+        width:90%;
+        margin-left:1rem;
+    }
+    .haveaques-head-sub{
+        width:90%;
+    }
+}
 @media (max-width:600px){
     .pricingM-right-box2 {
         width: 100%;

@@ -178,7 +178,7 @@ const ContactUs = () => {
                             </div>
                         </div>
                         <form ref={form} className='max-[950px]:mt-[1rem]'>
-                            <div className='w-[611px] max-[1100px]:w-[60%] max-[1100px]:w-[50%] flex flex-col gap-10 h-[647px] max-[1000px]:h-full mt-10 max-[950px]:mt-0 relative max-[950px]:justify-center bg-refd-500 items-center max-[420px]:items-start max-[950px]:w-full max-[950px]:p-10'>
+                            <div className='w-[611px] max-[1100px]:w-[60%] max-[1100px]:w-[50%] flex flex-col gap-10 h-[647px] max-[1000px]:h-full mt-10 max-[950px]:mt-0 relative max-[950px]:justify-center bg-refd-500 items-center max-[420px]:items-start max-[950px]:w-full max-[950px]:p-10 max-[1100px]:ml-[20%] max-[950px]:ml-0'>
                                 <div className='flex gap-[2rem] contact-part1 max-[950px]:flex-col  '>
                                     <div className='flex flex-col w-[278px]'>
                                         <label>
@@ -344,7 +344,7 @@ const ContactUs = () => {
                                         </div>
                                     </div>
                                 </div>
-                                <div className=' flex justify-end items-end max-[900px]:items-start max-[900px]:justify-start w-[95%]'>
+                                <div className=' flex justify-end items-end max-[900px]:items-start max-[900px]:justify-senter w-[95%] max-[1100px]:justify-center'>
                                     <div className='btn h-[54px] w-[214px] max-[1000px]:h-[33px] cursor-pointer'
                                         onClick={
                                             () => {

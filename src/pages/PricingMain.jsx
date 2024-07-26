@@ -120,9 +120,9 @@ const PricingMain = () => {
                 <div className=''>
                     <Pricing />
                 </div>
-                <div className='flex mt-[2rem] items-center justify-center max-[890px]:w-[100%]'>
-                    <Link to="/contactus" className='max-[890px]:w-[90%]'>
-                        <div className='h-[84px] max-[500px]:h-[50px] w-[865px] pricingM-sub bg-white hover:bg-[var(--theme)] hover:text-white hover:cursor-pointer text-[#060336] text-center justify-center items-center flex max-[890px]:w-[10%] max-[890px]:text-[28px]'>
+                <div className='radius flex mt-[2rem] items-center justify-center max-[890px]:w-[100%]'>
+                    <Link to="/contactus" className='max-[890px]:w-[90%] max-[992px]:w-[50%] radius'>
+                        <div className=' max-[900px] rounded-xl h-[84px] max-[500px]:h-[50px] w-[865px] pricingM-sub bg-white max-[1000px]:bg-[var(--theme)] max-[1000px]:text-white max-[1000px]:font-semibold hover:bg-[var(--theme)] hover:text-white hover:cursor-pointer text-[#060336] text-center justify-center items-center flex max-[890px]:w-[10%] max-[890px]:text-[28px] max-[1000px]:hover:bg-white max-[1000px]:hover:text-[var(--theme)] '>
                             Need a Customized Plan? Please Contact Us
                         </div>
                     </Link>

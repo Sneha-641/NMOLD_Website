@@ -79,7 +79,7 @@ const Pricing = () => {
                     </div>
                 </div>
 
-                <div className="pricing-plan relative pricing-plan-active pro">
+                <div className="pricing-plan  pricing-item4 relative pricing-plan-active pro">
                     <h3 className='pln-pricing'>Digital Marketing</h3>
                     <ul>
                         <li>✓ Social Media Marketing

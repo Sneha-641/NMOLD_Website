@@ -46,7 +46,7 @@ const AboutUs = () => {
                         <div className='h-[431px] w-[674px] max-[600px]:w-[98%] max-[600px]:h-[auto] min-[780px]:hidden'>
                             <img src={IMG1} alt="" className='max-[600px]:w-[98%] max-[600px]:h-[auto]' />
                         </div>
-                        <div className='h-[431px] w-[468px] max-sm:w-[100%]'>
+                        <div className='h-[431px] w-[468px] max-sm:w-[100%] max-[1100px]:ml-8 max-[780px]:ml-0'>
                             <div className='About-sub-h max-[630px]:text-[25px]'>
                                 The Story of NMOLD
                             </div>
@@ -199,8 +199,8 @@ const AboutUs = () => {
                     <div className='About-sub4'>
                         We hold our ethics, values and work culture to the highest standards and hold a professional work culture which refelts in our work.
                     </div>
-                    <div className='flex justify-center items-center gap-[1.5rem] mt-10 animatedstats-main '>
-                        {data.map((value,index)=>(<div className='w-[291px] h-[448px] max-[600px]:h-[100%] max-[600px]:w-[260px] max-[600px]:py-4 About-box-border flex flex-col justify-center items-center'>
+                    <div className='flex justify-center items-center gap-[1.5rem] max-[1236px]:gap-[0.4rem] max-[900px]:gap-[1.5rem] mt-10 animatedstats-main '>
+                        {data.map((value,index)=>(<div className='w-[291px] max-[1236px]:w-[291px] h-[448px] max-[600px]:h-[100%] max-[600px]:w-[260px] max-[600px]:py-4 About-box-border flex flex-col justify-center items-center'>
                             <div className='flex justify-start items-start w-[80%] mb-3'>
 
                                 <div className='h-[50px] w-[50px] max-[600px]:h-[40px] max-[600px]:w-[40px] text-left float-left'>
@@ -209,14 +209,14 @@ const AboutUs = () => {
                             </div>
                             <div className='flex flex-col justify-center items-center mb-3'>
 
-                                <div className='w-[229px] text-[36px] card-heading-aboutus' style={{
+                                <div className='w-[229px] text-[36px] card-heading-aboutus max-[1236px]:text-[33px]' style={{
                                     fontWeight: "700",
                                     lineHeight: "56px",
                                     textAlign: "left",
                                 }}>
                                     {value.title}
                                 </div>
-                                <div className='About-sub43 card-heading-aboutus2 font-[400] w-[219px] text-justify'>
+                                <div className='About-sub43 card-heading-aboutus2 font-[400] w-[219px] text-[20px] text-justify max-[1236px]:text-[19px]'>
                                     {value.description}
                                 </div>
                             </div>
