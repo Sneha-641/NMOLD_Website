@@ -74,7 +74,8 @@ const AboutUs = () => {
 
                 </div>
 
-                <div className=' max-[780px]:mt-[8rem] max-[630px]:mt-[-6rem] max-[414px,]:mt-[-8rem] max-[415px]:mt-[-99rem] '>
+                <div className=' max-[780px]:mt-[8rem] max-[630px]:mt-[-2rem] '>
+
                     <div className='heading text-center mt-[6rem] min-[521px]:mt-0 min-[640px]:mt-[12rem] min-[780px]:mt-[1rem] min-[976px]:mt-[6rem] min-[630px]:mt-[6rem] max-[630px]:text-[25px]'>
                         Some Facts About Us
                     </div>
