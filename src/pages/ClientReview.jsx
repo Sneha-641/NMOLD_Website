@@ -26,7 +26,7 @@ const ClientReview = () => {
         setTimeout(func, 2800);
     }, [sec])
     return (
-        <div className='w-full mb-[1rem] max-[900px]:mt-[5rem] max-[520px]:mt-[10rem] max-[450px]:mt-[13rem] '>
+        <div className='w-full mb-[1rem] max-[900px]:mt-[5rem] max-[530px]:mt-[10rem] max-[450px]:mt-[13rem] '>
             <div className='flex justify-center text-[36px] max-[400px]:text-[22px] max-[300px]:leading-[20px]'>
                 <div className='' style={{
                     fontWeight: "700",
