@@ -73,23 +73,23 @@ const AboutUs = () => {
                     </div>
                 </div>
                 <div className='px-2 min-[780px]:hidden'>
-                    <div className='max-[600px]:w-[98%] max-[600px]:h-[auto] min-[780px]:hidden'>
+                    <div className='max-[600px]:w-[98%] max-[600px]:h-[auto] min-[780px]:hidden flex justify-center'>
                         <img src={IMG1} alt="" className='max-[600px]:w-[98%] max-[600px]:h-[auto]' />
                     </div>
                     <div className=''>
-                        <div className='About-sub-h max-[630px]:text-[25px]'>
+                        <div className='About-sub-h max-[630px]:text-[25px] mt-[1rem]'>
                             The Story of NMOLD
                         </div>
                         <div className='min-[630px]:About-sub1 mt-[1.4rem] pricingM-subpart3'>
                             A revolutionary non-traditional marketing firm which operates on a simple principle, Result-oriented campaigns. We solve real-life business problems that traditional agencies cannot.
                         </div>
                         <div className='flex gap-10 mt-[3rem]'>
-                            <div className='btn radius px-[16px] rounded-[8px] h-[43px] w-[fit-content] flex'>
+                            <div className='btn radius px-[16px] z-[9999] rounded-[8px] h-[43px] w-[fit-content] flex'>
                                 <Link to="/ourservices">
                                     Explore our Services
                                 </Link>
                             </div>
-                            <div className='text-[var(--theme)] border-[var(--theme)] border-[1px] radius px-[16px] rounded-[8px] h-[43px] w-[fit-content] flex justify-center items-center'>
+                            <div className='z-[9999] text-[var(--theme)] border-[var(--theme)] border-[1px] radius px-[16px] rounded-[8px] h-[43px] w-[fit-content] flex justify-center items-center'>
                                 <Link to="/contactus"
                                 >
                                     Contact Us

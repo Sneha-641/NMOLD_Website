@@ -34,7 +34,7 @@ const Navbar = ({ state, setState,setshow, show }) => {
                         {/* Side Nav Bar */}
                         <div className='max-[640px]'>
                         <div className='mt-2'>
-                        <div className='px-[12px] max-[415px]:px-6px nav-side-contact py-[9px] mt-2 cursor cursor-pointer' onClick={() => {
+                        <div className='px-[12px] max-[415px]:px-6px nav-side-contact py-[9px]  min-w-[fit-content] mt-2 cursor cursor-pointer' onClick={() => {
                                         // add calling function
                                         window.location.href = 'tel:+919876543210';
 
