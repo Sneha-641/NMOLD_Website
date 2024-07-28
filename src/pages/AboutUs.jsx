@@ -266,7 +266,7 @@ const AboutUs = () => {
                                     textAlign: "center",
 
                                 }}>
-                                    Amanda Fisher
+                                    Yashika 
                                 </div>
                                 <div className='mt-2'
                                     style={{
@@ -288,11 +288,11 @@ const AboutUs = () => {
                                     }}>
                                     There are many variations of passages of Lorem Ipsum available
                                 </div>
-                                <div className='flex gap-5 justify-center mt-5 items-center'>
+                                <div className='flex gap-5 justify-center mt-5 items-center cursor-pointer'>
                                     <img src={G2} alt="" />
                                     <img src={G3} alt="" />
-                                    <img src={G4} alt="" />
-                                    <img src={G5} alt="" />
+                                    <img src={G4} alt="" onClick={()=>{window.location.href="mailto:yashikasharma1775@gmail.com"}}/>
+                                    <img src={G5} alt="" onClick={()=>{window.location.href="https://www.linkedin.com/in/yashika-sharma-aa7b26206/"}}/>
                                 </div>
                             </div>
                         </div>

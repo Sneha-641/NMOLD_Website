@@ -36,9 +36,9 @@ const Navbar = ({ state, setState,setshow, show }) => {
                         <div className='mt-2'>
                         <div className='px-[12px] max-[415px]:px-6px nav-side-contact py-[9px]  min-w-[fit-content] mt-2 cursor cursor-pointer' onClick={() => {
                                         // add calling function
-                                        window.location.href = 'tel:+919876543210';
+                                        window.location.href = 'tel:+917404890806';
 
-                                    }}><span className='max-[515px]:hidden'>Tel No. : </span>+919876543210</div>
+                                    }}><span className='max-[515px]:hidden'>Tel No. : </span>+917404890806</div>
                         </div>
                             <div className='flex flex-col gap-[10px] mt-[3rem] pll-4'>
                                 <div className={`float-right ${show ? "" : "hidden"} absolute right-2  top-2`} onClick={
@@ -126,9 +126,9 @@ const Navbar = ({ state, setState,setshow, show }) => {
                 <div className='flex gap-[23px]'>
                     <div className='btn px-[12px] py-[9px] gap-[10px] cursor cursor-pointer max-[640px]:hidden   ' onClick={() => {
                         // add calling function
-                        window.location.href = 'tel:+919876543210';
+                        window.location.href = 'tel:+917404890806';
 
-                    }}>+91 9876543210</div>
+                    }}>+91 7404890806 </div>
                     <div className='radius text-[white] bg-black px-[19px] py-[9px] max-[940px]:hidden' onClick={() => {
                         window.location.href = 'meetingform'
                     }}>Schedule Meeting</div>
