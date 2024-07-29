@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
-import WebImg from '../assets/Web.png';
-import AppImg from '../assets/App.png';
-import UIUXImg from '../assets/UiUx.png';
-import DigitalImg from '../assets/Digital.png';
+import WebImg from '../assets/web_d_gif.gif';
+import AppImg from '../assets/android-app-development-in-lucknow.gif';
+import UIUXImg from '../assets/web-developmen-design-1.gif';
+import DigitalImg from '../assets/Demystifying-The-Role-of-Analytics-1.gif';
 import Image1 from '../assets/Image1.png';
 import Image2 from '../assets/Image2.png';
 import '../styles/Services.css';
