@@ -1,7 +1,7 @@
 import React from 'react'
 import Navbar from './Navbar'
 import '../styles/home.css'
-import IMGC from "../assets/data-analysis-animation-download-in-lottie-json-gif-static-svg-file-formats--analytics-logo-statistics-computing-pack-business-animations-3479081.gif"
+import IMGC from "../assets/web-development-services.gif"
 
 import WhyChooseUs from './WhyChooseUs';
 import Delivers from './Delivers';

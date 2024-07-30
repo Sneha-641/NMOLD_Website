@@ -283,7 +283,7 @@ const PricingMain = () => {
                                                 </div>
                                                 <div className='flex gap-10'>
                                                     <div className='btn mt-10 h-[57px] w-[228px] text-[20px] px-[16px]'>
-                                                        <a href="https://wa.me/8744073223"
+                                                        <a href="https://wa.me/7404890806"
                                                             target="_blank"
                                                             rel="noopener noreferrer">
                                                             Chat With Us

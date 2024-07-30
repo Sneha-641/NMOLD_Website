@@ -255,12 +255,12 @@ const AboutUs = () => {
                     </div>
                     <div className=' flex justify-center mt-10'>
                         <div className='w-[310px] h-[447px] bg-white border-[2px] border-[#DCDCDC] flex flex-col justify-center items-center'>
-                            <div className='w-[229px] h-[210px]'>
-                                <img src={G1} alt="" />
+                            <div className='w-[249px] h-[280px] '>
+                                <img src={G1} alt="" className='rounded-lg w-[249px] h-[260px]' />
                             </div>
-                            <div className='px-7 flex flex-col justify-center items-center mt-3'>
+                            <div className='px-7 flex flex-col justify-center items-center mt-0'>
                                 <div className='' style={{
-                                    fontSize: "18px",
+                                    fontSize: "22px",
                                     fontWeight: "600",
                                     lineHeight: "30px",
                                     textAlign: "center",
@@ -270,15 +270,15 @@ const AboutUs = () => {
                                 </div>
                                 <div className='mt-2'
                                     style={{
-                                        fontSize: "14px",
-                                        fontWeight: "400",
+                                        fontSize: "18px",
+                                        fontWeight: "500",
                                         lineHeight: "22px",
                                         textAlign: "center",
 
                                     }}>
-                                    Title
+                                    CEO, Founder
                                 </div>
-                                <div className=''
+                                {/* <div className=''
                                     style={{
                                         fontSize: "14px",
                                         fontWeight: "400",
@@ -287,10 +287,10 @@ const AboutUs = () => {
 
                                     }}>
                                     There are many variations of passages of Lorem Ipsum available
-                                </div>
+                                </div> */}
                                 <div className='flex gap-5 justify-center mt-5 items-center cursor-pointer'>
-                                    <img src={G2} alt="" />
-                                    <img src={G3} alt="" />
+                                    {/* <img src={G2} alt="" /> */}
+                                    {/* <img src={G3} alt="" /> */}
                                     <img src={G4} alt="" onClick={()=>{window.location.href="mailto:yashikasharma1775@gmail.com"}}/>
                                     <img src={G5} alt="" onClick={()=>{window.location.href="https://www.linkedin.com/in/yashika-sharma-aa7b26206/"}}/>
                                 </div>
